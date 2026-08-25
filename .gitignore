@@ -13,8 +13,7 @@ build/
 out/
 
 # Data
-data/raw/
-data/processed/
+# data/raw/ and data/processed/ are tracked via .gitkeep
 
 # IDE
 .idea/
