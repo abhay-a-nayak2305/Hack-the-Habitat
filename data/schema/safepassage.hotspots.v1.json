@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SafePassage Hotspot Schema v1",
+  "description": "Frozen contract for all hotspot GeoJSON features. Both frontend and backend must conform to this shape.",
+  "type": "object",
+  "required": ["type", "geometry", "properties"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "Feature"
+    },
+    "geometry": {
+      "type": "object",
+      "required": ["type", "coordinates"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Point"
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "[longitude, latitude] in WGS84"
+        }
+      }
+    },
+    "properties": {
+      "type": "object",
+      "required": [
+        "hotspot_id",
+        "risk_score",
+        "confidence",
+        "species_mix",
+        "endangered_flag",
+        "season_curve",
+        "observation_count",
+        "nearest_highway",
+        "intervention",
+        "model_version"
+      ],
+      "properties": {
+        "hotspot_id": {
+          "type": "string",
+          "pattern": "^HS-[0-9]{6}$",
+          "description": "Unique hotspot identifier"
+        },
+        "risk_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Ranked risk score 0-100"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Model-reported confidence"
+        },
+        "species_mix": {
+          "type": "object",
+          "description": "Count of observations by taxon class",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "endangered_flag": {
+          "type": "boolean",
+          "description": "True if any endangered/protected species present"
+        },
+        "season_curve": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 12,
+          "maxItems": 12,
+          "description": "Monthly collision counts Jan-Dec"
+        },
+        "observation_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total observations in this hotspot"
+        },
+        "nearest_highway": {
+          "type": "string",
+          "description": "Nearest highway identifier, e.g. NH-766"
+        },
+        "intervention": {
+          "type": "string",
+          "enum": ["wildlife_crossing", "fencing", "signage", "speed_limit", "none"],
+          "description": "Recommended intervention type"
+        },
+        "model_version": {
+          "type": "string",
+          "description": "Version tag of the model that produced this score"
+        }
+      }
+    }
+  }
+}
