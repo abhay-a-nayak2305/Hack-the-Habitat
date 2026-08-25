@@ -151,7 +151,7 @@ hack-the-habitat/
 │   │   └── safepassage.hotspots.v1.json      # FROZEN — do not change after Day 1
 │   ├── fixtures/
 │   │   ├── hotspots.geojson                  # Fixture data for frontend dev
-│   │   └── segments.geojson                   # Fixture data for frontend dev
+│   │   │   └── segments.geojson                   # Fixture data for frontend dev
 │   ├── raw/                                   # Raw downloads, gitignored
 │   └── processed/                             # Cleaned/joined datasets, gitignored
 │
@@ -180,6 +180,75 @@ hack-the-habitat/
 ├── .gitignore
 └── README.md
 ```
+
+### Who Works on What
+
+| Role | Primary Folders | Also Touches |
+|------|----------------|--------------|
+| **ML Engineer** | `ml-pipeline/`, `data/raw/`, `data/processed/`, `data/schema/`, `scripts/` | `docs/methodology.md`, `docs/attribution.md`, backend routers |
+| **Fullstack Dev** | `frontend/`, `backend/`, `data/fixtures/`, `scripts/` | `docs/devpost.md`, `docs/demo-script.md`, `.github/workflows/` |
+
+#### ML Engineer — Your Territory
+
+You own the data and the model. Everything from raw ingestion to ranked output flows through your work:
+
+- **`ml-pipeline/src/ingest.py`** — iNaturalist structured-field query, deduplication, GBIF cross-check
+- **`ml-pipeline/src/features.py`** — OSM road join, ESA WorldCover, WDPA protected-area features
+- **`ml-pipeline/src/kde.py`** — kernel-density hotspot maps from the 92 observation points
+- **`ml-pipeline/src/model.py`** — GradientBoosting segment scoring, confidence calibration
+- **`ml-pipeline/src/metrics.py`** — AUC, calibration, top-5% capture stat for the methodology page
+- **`ml-pipeline/src/export_geojson.py`** — exports Schema v1-compliant GeoJSON for the frontend/backend
+- **`ml-pipeline/notebooks/`** — exploratory analysis, honesty-ladder checks, Rung 2 state pooling
+- **`data/raw/`** — downloaded CSVs, API responses, gitignored
+- **`data/processed/`** — cleaned datasets, joined features, gitignored
+- **`data/schema/safepassage.hotspots.v1.json`** — frozen contract; you must validate all output against it
+- **`scripts/download_inaturalist.py`**, **`scripts/download_osm.py`** — one-off data fetchers
+- **`scripts/validate_schema.py`** — run this on every data commit
+
+**Your deliverables:**
+1. Day 1: honesty-ladder check documented in `docs/methodology.md`
+2. Day 2-3: KDE hotspots and segment model trained
+3. Day 4: metrics JSON (`/api/stats/summary` payload) computed
+4. Day 5: Schema v1 GeoJSON exported and handed to fullstack dev
+
+#### Fullstack Dev — Your Territory
+
+You own the product. The map, the cards, the form, the API, and the deploy:
+
+- **`frontend/src/components/`** — MapLibre map, hotspot layer, recommendation cards, seasonality calendar, species filters, report-a-sighting form
+- **`frontend/src/pages/`** — MapPage, MethodologyPage, AttributionPage
+- **`frontend/src/hooks/`** — data fetching, map state, filters
+- **`frontend/src/utils/`** — helpers for GeoJSON parsing, formatting
+- **`frontend/src/styles/`** — Tailwind directives, custom CSS
+- **`frontend/vercel.json`** — deploy config
+- **`backend/app/routers/hotspots.py`** — serves filtered GeoJSON to the map
+- **`backend/app/routers/segments.py`** — full segment dossier endpoint
+- **`backend/app/routers/stats.py`** — headline metrics for methodology page
+- **`backend/app/routers/sightings.py`** — POST endpoint for report-a-sighting form
+- **`backend/app/main.py`** — FastAPI app entrypoint
+- **`data/fixtures/`** — committed fixture GeoJSON for frontend dev before real data lands
+- **`scripts/validate_schema.py`** — run this on every fixture/model data commit
+- **`.github/workflows/ci.yml`** — CI for linting, schema validation, deploy preview
+- **`docs/devpost.md`** — Devpost writeup, demo script, screenshots
+
+**Your deliverables:**
+1. Day 1: React shell deployed to Vercel, map UI loading fixtures
+2. Day 2-3: recommendation cards, seasonality, species filters, report form skeleton
+3. Day 4: methodology and attribution pages written
+4. Day 5: FastAPI live, real predictions wired, sightings form on Supabase
+5. Day 6-7: polish, accessibility, mobile, demo video, Devpost entry
+
+### Shared Responsibilities
+
+Both roles touch these:
+
+| Artifact | Why Both Touch It |
+|----------|------------------|
+| **`data/schema/safepassage.hotspots.v1.json`** | ML validates output against it; frontend/backend validate input against it |
+| **`data/fixtures/`** | ML may update fixtures when model improves; frontend consumes them |
+| **`scripts/validate_schema.py`** | Both run it before committing data or fixtures |
+| **`docs/methodology.md`** | ML writes model metrics; fullstack writes methodology page content |
+| **Evening sync at 21:30** | Both leads present; contract changes require both signatures |
 
 ---
 
