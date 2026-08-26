@@ -1,0 +1,765 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.89482315777903,
+          13.745401188473625
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000000",
+        "risk_score": 6,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.11595088521634,
+          19.50714306409916
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000001",
+        "risk_score": 72,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.33715718828175,
+          17.31993941811405
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000002",
+        "risk_score": 11,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.93089474634954,
+          15.986584841970366
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000003",
+        "risk_score": 10,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.64855987373629,
+          11.560186404424366
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000004",
+        "risk_score": 9,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.28140769114411,
+          11.559945203362027
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000005",
+        "risk_score": 73,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.59739025726688,
+          10.580836121681994
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000006",
+        "risk_score": 0,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.11387550730889,
+          18.66176145774935
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000007",
+        "risk_score": 0,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.73931655089633,
+          16.011150117432088
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000008",
+        "risk_score": 2,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.37160330175998,
+          17.080725777960453
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000009",
+        "risk_score": 3,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.86035881521151,
+          10.205844942958024
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000010",
+        "risk_score": 2,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.36419298949833,
+          19.699098521619945
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000011",
+        "risk_score": 72,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.52041274388223,
+          18.324426408004218
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000012",
+        "risk_score": 2,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.59108429802667,
+          12.123391106782762
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000013",
+        "risk_score": 99,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.72505626459647,
+          11.818249672071007
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000014",
+        "risk_score": 100,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.46717878493169,
+          11.834045098534338
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000015",
+        "risk_score": 73,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.43691015338696,
+          13.042422429595376
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000016",
+        "risk_score": 4,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.78137691205107,
+          15.247564316322379
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000017",
+        "risk_score": 0,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.47386421209725,
+          14.319450186421157
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000018",
+        "risk_score": 8,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.52121994991681,
+          12.912291401980418
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000019",
+        "risk_score": 7,
+        "confidence": 0.3,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "NH-TEST",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.1-kde"
+      }
+    }
+  ]
+}

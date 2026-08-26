@@ -1,0 +1,10 @@
+{
+  "total_observations": 0,
+  "positive_segments": 0,
+  "auc": 0.5,
+  "top5_capture": 0.0,
+  "model_version": "v0.1",
+  "confidence_tier": "low",
+  "status": "demo_skipped_no_segments",
+  "notes": "Model trained on sparse citizen-science data. Predictive layer is secondary to the evidence layer. No risk scores are extrapolated into zero-coverage areas."
+}
