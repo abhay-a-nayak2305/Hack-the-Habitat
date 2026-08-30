@@ -1,0 +1,26 @@
+{
+  "inaturalist_count": 0,
+  "gbif_count": 2952,
+  "total_records": 2952,
+  "schema_version": "v1",
+  "ingestion_notes": "iNaturalist: structured field query for Roadkill=Yes observations. GBIF: curated datasetKey queries for India Roadkill Monitoring Project (491 records, CC-BY 4.0) and Anamalai Hills/Valparai Plateau (2,473 records, CC-BY 4.0). Free-text GBIF searches excluded.",
+  "gbif_datasets": [
+    {
+      "title": "India Roadkill Monitoring Project",
+      "doi": "10.15468/vbd39p",
+      "license": "CC-BY 4.0"
+    },
+    {
+      "title": "Anamalai Hills / Valparai Plateau",
+      "doi": "10.15468/qxb735",
+      "license": "CC-BY 4.0"
+    }
+  ],
+  "honesty_ladder": {
+    "structured_record_threshold": 150,
+    "structured_records_collected": 2952,
+    "status": "above_threshold",
+    "consequence": "Structured record threshold met. Predictive model may be promoted once validated on held-out spatial splits.",
+    "progress_pct": 100
+  }
+}

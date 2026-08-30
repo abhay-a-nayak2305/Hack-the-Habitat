@@ -249,6 +249,11 @@ def query_gbif_structured_datasets(country: str = "IN") -> gpd.GeoDataFrame:
                         "source": f"gbif_{dataset_title.lower().replace(' ', '_')}",
                         "url": f"https://www.gbif.org/occurrence/{rec.get('key')}",
                         "place_id": PLACE_ID,
+                        "locality": rec.get("locality", ""),
+                        "state_province": rec.get("stateProvince", ""),
+                        "verbatim_identification": rec.get("verbatimIdentification", ""),
+                        "vernacular_name": rec.get("vernacularName", ""),
+                        "location_remarks": rec.get("locationRemarks", ""),
                     }
                 )
                 dataset_count += 1
