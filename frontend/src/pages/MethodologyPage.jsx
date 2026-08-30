@@ -250,6 +250,55 @@ export default function MethodologyPage() {
           </p>
         </section>
 
+        {/* Data sources */}
+        <section className="surface mt-10 rounded-panel border-leaf/20 p-6 animate-fade-up" style={{ animationDelay: "400ms" }}>
+          <div className="flex items-center gap-2">
+            <span className="grid h-7 w-7 place-items-center rounded-md bg-leaf/15 text-leaf">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+              </svg>
+            </span>
+            <h2 className="font-display text-display-sm text-bone">
+              Data <span className="font-serif text-leaf">sources</span>
+            </h2>
+          </div>
+          <div className="mt-4 space-y-3">
+            <div className="rounded-lg border border-canopy-600 bg-canopy-700/50 p-4">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="text-sm font-semibold text-bone">India Roadkill Monitoring Project</p>
+                  <p className="mt-1 text-xs text-bone-dim">Citizen-science roadkill records across India (2018–2025). Koola Wild Foundation.</p>
+                </div>
+                <span className="shrink-0 rounded-full bg-leaf/10 px-2.5 py-0.5 font-mono text-[10px] text-leaf">491 records</span>
+              </div>
+              <p className="mt-2 text-[11px] text-bone-faint">
+                Pawgi M, Joshi Y, Pawgi K (2026). India Roadkill Monitoring Project. Version 1.4. Koola Wild Foundation. Occurrence dataset{" "}
+                <a href="https://doi.org/10.15468/vbd39p" target="_blank" rel="noopener" className="underline decoration-bone-faint/30 hover:text-bone">10.15468/vbd39p</a>{" "}
+                accessed via GBIF.org on 2026-08-30.
+              </p>
+            </div>
+            <div className="rounded-lg border border-canopy-600 bg-canopy-700/50 p-4">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="text-sm font-semibold text-bone">Anamalai Hills / Valparai Plateau Roadkill Survey</p>
+                  <p className="mt-1 text-xs text-bone-dim">Transect-based roadkill survey, Western Ghats (2011–2013). Nature Conservation Foundation.</p>
+                </div>
+                <span className="shrink-0 rounded-full bg-leaf/10 px-2.5 py-0.5 font-mono text-[10px] text-leaf">2,461 records</span>
+              </div>
+              <p className="mt-2 text-[11px] text-bone-faint">
+                Jeganathan P, Mudappa D, Kumar M A, Raman T R S (2022). Wildlife roadkill occurrence data from plantations and tropical rainforest in the Anamalai Hills, Western Ghats, India. Version 1.1. Nature Conservation Foundation. Sampling event dataset{" "}
+                <a href="https://doi.org/10.15468/qxb735" target="_blank" rel="noopener" className="underline decoration-bone-faint/30 hover:text-bone">10.15468/qxb735</a>{" "}
+                accessed via GBIF.org on 2026-08-30.
+              </p>
+            </div>
+          </div>
+          <p className="mt-4 text-xs text-bone-faint">
+            All data sourced from GBIF-mediated datasets under CC-BY 4.0.{" "}
+            <a href="https://www.gbif.org/" target="_blank" rel="noopener" className="underline decoration-bone-faint/30 hover:text-bone">GBIF.org</a>.
+          </p>
+        </section>
+
       </div>
     </div>
   );

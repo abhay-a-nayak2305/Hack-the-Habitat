@@ -16,6 +16,13 @@ export default function Hero({ onReportClick }) {
     ? Object.keys(stats.hotspots_by_highway).join(" · ")
     : null;
 
+  // Check if above honesty ladder threshold
+  const honestyLadder = stats?.honesty_ladder;
+  const aboveThreshold = honestyLadder?.status === "above_threshold";
+  const recordLabel = aboveThreshold
+    ? "above the 150-record honesty bar"
+    : "below the 150-record honesty bar";
+
   const scrollToMap = () => {
     document.getElementById("zone-map")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -114,8 +121,8 @@ export default function Hero({ onReportClick }) {
           <Fact
             value={records}
             suffix="structured records"
-            label="below the 150-record honesty bar"
-            accent="amber"
+            label={recordLabel}
+            accent={aboveThreshold ? "leaf" : "amber"}
             animate={heroInView}
           />
           <Fact
