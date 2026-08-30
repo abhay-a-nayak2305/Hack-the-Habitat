@@ -262,7 +262,7 @@ export default function Map({ hotspots, segments, selectedId, onSelectHotspot, l
   useEffect(() => {
     dataRef.current = { hotspots, segments };
     const map = mapRef.current;
-    if (!map || !initializedRef.current) return;
+    if (!map) return;
     const apply = () => {
       const { hotspots: h, segments: s } = dataRef.current;
       if (h && map.getSource("hotspots")) map.getSource("hotspots").setData(h);
