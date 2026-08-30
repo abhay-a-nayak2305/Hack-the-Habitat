@@ -20,15 +20,6 @@ export default function Footer() {
                 Roadkill hotspot predictor and wildlife-crossing planner for India's highways.
                 An open-source project in active development — built entirely on open data.
               </p>
-              {/* Project badges */}
-              <div className="mt-3 flex flex-wrap gap-2">
-                <span className="inline-flex items-center gap-1 rounded-md border border-leaf/20 bg-leaf/[0.06] px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider text-leaf/80">
-                  MIT License
-                </span>
-                <span className="inline-flex items-center gap-1 rounded-md border border-amber/20 bg-amber/[0.06] px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider text-amber/80">
-                  Hack the Habitat 2024
-                </span>
-              </div>
             </div>
           </div>
 
