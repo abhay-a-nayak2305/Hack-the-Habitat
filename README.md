@@ -201,7 +201,7 @@ This is an open-source project. See individual data source licenses for data usa
 
 <div align="center">
 
-**Built with open data · zero paid services · one frozen contract**
+**Built with open data · zero paid services · transparency first**
 
 *An ongoing open-source project*
 
