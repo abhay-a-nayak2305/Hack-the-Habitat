@@ -192,20 +192,6 @@ export default function DossierPanel({ hotspot, onClose, hideClose = false }) {
             {copied ? <Check size={13} className="text-leaf-bright" /> : <Copy size={13} />}
             {copied ? "Copied" : "Copy dossier"}
           </button>
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              window.open(
-                `https://www.inaturalist.org/observations?lat=${lat}&lng=${lon}&radius=10&order=desc&order_by=observed_on`,
-                "_blank",
-                "noopener,noreferrer"
-              );
-            }}
-            className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-rule px-3 py-2 text-xs text-bone-dim transition-colors hover:border-amber/40 hover:text-bone"
-          >
-            <External size={13} />
-            Evidence
-          </button>
         </div>
       </div>
     </div>
