@@ -105,6 +105,7 @@ export default function Hero({ onReportClick }) {
             </span>{" "}
             to stop it.
           </span>
+          <span className="ml-6 text-[0.85em] text-amber font-medium">⚡ Bandipur/NH-766 anchor story</span>
         </h1>
 
         {/* Subhead */}

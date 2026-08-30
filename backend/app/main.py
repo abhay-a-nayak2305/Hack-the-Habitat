@@ -58,3 +58,9 @@ def root():
 def health():
     return {"status": "ok"}
 
+
+@app.get("/keep-alive")
+def keep_alive():
+    """Endpoint kept alive by external cron to prevent Render free tier cold start."""
+    return {"status": "alive", "timestamp": __import__('datetime').datetime.utcnow().isoformat()}
+

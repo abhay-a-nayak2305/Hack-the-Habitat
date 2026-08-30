@@ -239,10 +239,10 @@ export default function MethodologyPage() {
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber/60" />
               <span><span className="font-semibold text-bone">Monsoon overrepresentation:</span> Some datasets show seasonal bias toward monsoon months (June–September) when roadkill is more visible and more reported.</span>
             </li>
-            <li className="flex gap-2">
+<li className="flex gap-2">
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber/60" />
-              <span><span className="font-semibold text-bone">Geographic concentration:</span> The Anamalai Hills dataset is concentrated in Tamil Nadu's Western Ghats. National coverage remains uneven.</span>
-            </li>
+              <span><span className="font-semibold text-bone">Geographic concentration:</span> The Anamalai Hills dataset is concentrated in Tamil Nadu's Western Ghats (~2,461 of ~2,952 records, ~83% of total). National coverage remains uneven — many highway stretches have zero observed records.</span>
+</li>
           </ul>
           <p className="mt-3 text-xs text-bone-faint">
             These biases don't invalidate the evidence — they contextualize it. A hotspot with zero observations

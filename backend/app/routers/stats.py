@@ -8,6 +8,17 @@ from app.services.geodata import REPO_ROOT, load_hotspots, load_segments
 router = APIRouter()
 
 
+@router.get("/keep-alive")
+def keep_alive():
+    """Keep-alive endpoint to prevent Render free-tier cold start.
+
+    External cron (e.g., cron-job.org, uptimeRobot) should ping this
+    endpoint every 5 minutes to keep the Render free instance warm.
+    """
+    from datetime import datetime
+    return {"status": "alive", "timestamp": datetime.utcnow().isoformat()}
+
+
 @router.get("/summary")
 def summary():
     """Headline numbers for the methodology page. Computed live from fixtures

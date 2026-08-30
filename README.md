@@ -35,7 +35,7 @@ The Supreme Court's night-traffic ban on NH-766 through Bandipur Tiger Reserve w
 | **Rank** | Segments sorted by risk; clicking opens a recommendation card | "Segment NH-766-KM12 scores 87/100 — build a crossing here" |
 | **Act** | Recommendation cites evidence corridor so forest departments can budget | Decision-ready, fundable intervention plan |
 
-> **Transparency First:** The honesty ladder currently tracks structured records against the 150-record threshold. With ~2,964 records from iNaturalist and curated GBIF datasets, the threshold is met. The predictive model may be promoted once validated on held-out spatial splits. The evidence layer — descriptive, citable collision corridors — remains the headline.
+> **Transparency First:** The honesty ladder tracks structured records against the 150-record threshold. The record threshold is met (2,952 structured records from iNaturalist and curated GBIF datasets, > 150). The evidence layer — descriptive, citable collision corridors — remains the headline feature. The predictive model is promoted to a secondary overlay only after additional validation criteria are met: calibration error < 0.1, top-5% capture > 70%, and held-out spatial split validation. Current metrics (calibration error ~0.20, top-5% capture ~20%) indicate the model remains in the secondary layer pending further data and validation.
 
 ---
 
@@ -48,6 +48,8 @@ The intelligence layer provides a transparency-first look at how SafePassage sco
 - **Risk Distribution** — High / Medium / Low segment counts
 - **Species Summary** — Mammalia, Aves, Reptilia, Amphibia breakdown
 - **Honesty Ladder** — Real-time structured record count vs. threshold
+
+**⚠️ Render free-tier cold start notice:** The backend free instance spins down when idle and takes ~30-50s to wake up. If a judge hits the live API cold, it may appear broken initially. A keep-alive ping is set up at `GET /api/stats/keep-alive` — recommend running a cron job (e.g., cron-job.org or uptimeRobot) to ping this endpoint every 5 minutes during the demo. Alternatively, the frontend fixtures load automatically if the API is unreachable, so the UI never shows a blank screen.
 
 ---
 
@@ -158,6 +160,7 @@ hack-the-habitat/
 | `GET` | `/api/stats/summary` | Headline metrics for methodology page |
 | `GET` | `/api/stats/dashboard` | Full dashboard data (model metrics, interventions, species) |
 | `GET` | `/api/stats/honesty-ladder` | Honesty ladder status |
+| `GET` | `/api/stats/keep-alive` | Keep-alive ping to prevent Render free-tier cold start |
 | `POST` | `/api/sightings` | Submit a citizen-science sighting |
 | `GET` | `/api/health` | Health check |
 
@@ -175,13 +178,13 @@ SafePassage outputs the evidence layer that debate is missing — for policymake
 
 | Source | Role | Records | License |
 |--------|------|---------|---------|
-| [iNaturalist](https://www.inaturalist.org/) | Roadkill-flagged observations (structured field query) | ~28 | CC0 / CC-BY |
+| [iNaturalist](https://www.inaturalist.org/) | Roadkill-flagged observations contributing to the structured dataset | 2,952 (aggregated) | CC0 / CC-BY |
 | [India Roadkill Monitoring Project](https://www.roadkillmonitoring.in/) | Curated citizen-science roadkill records across India | 491 | CC-BY 4.0 |
-| [Anamalai Hills / Valparai Plateau](https://www.gbif.org/dataset/4c627c3e-5c70-4874-9c03-e8de46e4a9c3) | Transect-based roadkill survey, Western Ghats | 2,473 | CC-BY 4.0 |
+| [Anamalai Hills / Valparai Plateau](https://www.gbif.org/dataset/4c627c3e-5c70-4874-9c03-e8de46e4a9c3) | Transect-based roadkill survey, Western Ghats (2,461 with coordinates) | 2,461 | CC-BY 4.0 |
 | [OpenStreetMap](https://www.openstreetmap.org/) | Road geometry via Overpass API | — | ODbL |
 | [ESA WorldCover](https://worldcover2021.esa.int/) | 10m land cover classification | — | CC-BY 4.0 |
 
-**Total structured records: ~2,980** — above the 150-record honesty ladder threshold.
+**Total structured records: 2,952** — above the 150-record honesty ladder threshold. Model may be promoted once validated on held-out spatial splits.
 
 ---
 
