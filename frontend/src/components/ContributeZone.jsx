@@ -168,8 +168,7 @@ export default function ContributeZone({ onReportClick }) {
 
         {/* Fine print */}
         <p className="mt-8 text-center text-xs text-bone-faint">
-          Observations are submitted to the SafePassage dataset and cross-referenced with
-          open biodiversity databases. No account required.
+          Observations are submitted to the SafePassage dataset. No account required.
         </p>
       </div>
     </div>

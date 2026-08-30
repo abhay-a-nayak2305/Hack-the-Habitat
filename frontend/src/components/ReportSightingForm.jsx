@@ -113,7 +113,7 @@ export default function ReportSightingForm({ open, onClose }) {
         <div className="flex items-start justify-between px-6 pt-6">
           <div>
             <h2 className="font-display text-display-sm text-bone">Report a sighting</h2>
-            <p className="mt-1 text-xs text-bone-dim">30 seconds of your eyes on the road feeds tomorrow's model run.</p>
+            <p className="mt-1 text-xs text-bone-dim">Every observation strengthens the evidence layer for India's wildlife corridors.</p>
           </div>
           <button onClick={close} aria-label="Close" className="rounded-lg p-2.5 min-h-[44px] min-w-[44px] flex items-center justify-center text-bone-faint transition-colors hover:bg-canopy-600 hover:text-bone">
             <X size={16} />
@@ -128,7 +128,7 @@ export default function ReportSightingForm({ open, onClose }) {
             <div className="mt-4 font-display text-display-sm text-bone">Recorded.</div>
             <p className="mx-auto mt-2 max-w-xs text-sm leading-relaxed text-bone-dim">
               Your report is appended to the structured dataset. Run the pipeline to fold it
-              into tomorrow's hotspots — this is the honesty ladder, in action.
+              into the next model run.
             </p>
             <button onClick={close} className="btn-ghost mt-6 w-full justify-center">Done</button>
           </div>

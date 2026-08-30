@@ -79,7 +79,7 @@ export default function Header({ onReportClick, live = null }) {
               SafePassage
             </span>
             <span className="hidden font-serif text-[10.5px] italic text-bone-faint sm:block">
-              national wildlife corridor intelligence
+              wildlife corridor intelligence
             </span>
           </span>
         </button>

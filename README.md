@@ -6,7 +6,6 @@
 
 **Show us your highway, and we'll tell you where animals will die next — and exactly what to build there to stop it.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9C%93-82B366)]()
 [![Zero Paid Services](https://img.shields.io/badge/Services-Zero%20Cost-4CAF50)]()
@@ -36,7 +35,7 @@ The Supreme Court's night-traffic ban on NH-766 through Bandipur Tiger Reserve w
 | **Rank** | Segments sorted by risk; clicking opens a recommendation card | "Segment NH-766-KM12 scores 87/100 — build a crossing here" |
 | **Act** | Recommendation cites evidence corridor so forest departments can budget | Decision-ready, fundable intervention plan |
 
-> **Transparency First:** The Day-1 honesty ladder returned 92 structured records (below the 150-record threshold). The predictive model is demoted to a secondary, clearly-labelled, low-confidence layer. The evidence layer — descriptive, citable collision corridors — is the headline.
+> **Transparency First:** The honesty ladder currently tracks structured records against the 150-record threshold. The predictive model is demoted to a secondary, clearly-labelled, low-confidence layer until that bar is met. The evidence layer — descriptive, citable collision corridors — is the headline.
 
 ---
 
@@ -76,7 +75,6 @@ The intelligence layer provides a transparency-first look at how SafePassage sco
 | 🔍 **Smart Filters** | Filter by risk score, species, highway, endangered status |
 | 📋 **Report a Sighting** | Citizen-science contribution form |
 | 🔬 **Methodology Page** | Honest breakdown of model capabilities and limitations |
-| ⚡ **Fixture-First** | UI always works — falls back to committed data if API is unreachable |
 
 ---
 
@@ -197,7 +195,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
+This is an open-source project. See individual data source licenses for data usage terms.
 
 ---
 

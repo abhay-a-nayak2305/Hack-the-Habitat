@@ -71,7 +71,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-rule pt-6 text-[11px]">
           <span className="font-mono text-[10px] uppercase tracking-widest text-bone-faint">
-            Open data · Zero paid services · One frozen contract
+            Open data · Zero paid services · Open-source project
           </span>
           <span className="text-bone-faint">
             Built with open data for India's wildlife
