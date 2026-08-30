@@ -188,6 +188,9 @@ export default function DossierPanel({ hotspot, onClose, hideClose = false }) {
             {copied ? "Copied" : "Copy dossier"}
           </button>
           <a
+            href={`https://www.inaturalist.org/observations?place_id=6737&taxon_id=47170&lat=${lat}&lng=${lon}`}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
             className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-rule px-3 py-2 text-xs text-bone-dim transition-colors hover:border-amber/40 hover:text-bone"
           >
