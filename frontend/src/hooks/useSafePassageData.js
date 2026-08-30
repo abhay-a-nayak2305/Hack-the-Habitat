@@ -94,12 +94,8 @@ export function useStats() {
   const [data, setData] = useState(undefined);
   useEffect(() => {
     let cancelled = false;
-    fetch(`${API_BASE}/stats/summary`)
-      .then((res) => {
-        if (!res.ok) throw new Error(String(res.status));
-        return res.json();
-      })
-      .then((json) => {
+    fetchJson(`${API_BASE}/stats/summary`, "/fixtures/stats-summary.json")
+      .then(({ data: json }) => {
         if (!cancelled) setData(json);
       })
       .catch(() => {

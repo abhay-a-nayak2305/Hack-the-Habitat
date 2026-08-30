@@ -1,0 +1,26 @@
+{
+    "hotspot_count":  28,
+    "segment_count":  45,
+    "total_structured_observations":  152,
+    "endangered_flagged_hotspots":  6,
+    "high_risk_hotspots_ge_70":  10,
+    "average_model_confidence":  0.3,
+    "hotspots_by_highway":  {
+                                "NH-766":  22,
+                                "NH-48":  6
+                            },
+    "recommended_interventions":  {
+                                      "signage":  11,
+                                      "wildlife_crossing":  10,
+                                      "fencing":  4,
+                                      "speed_limit":  3
+                                  },
+    "honesty_ladder":  {
+                           "structured_record_threshold":  150,
+                           "structured_records_collected":  28,
+                           "status":  "below_threshold",
+                           "consequence":  "Predictive hotspot model demoted to secondary, low-confidence layer. Evidence layer (descriptive collision corridors) is the headline feature.",
+                           "progress_pct":  19
+                       },
+    "model_version":  "v0.3"
+}
