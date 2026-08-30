@@ -69,18 +69,24 @@ def _resolve_roadkill_field_id() -> Optional[int]:
 
     This is resolved at runtime rather than hardcoded because field IDs
     can change across iNaturalist API versions.
+
+    NOTE: The /v1/fields endpoint was deprecated. If resolution fails,
+    we return None and let the caller skip iNaturalist ingestion.
     """
     url = "https://api.inaturalist.org/v1/fields"
     params = {"q": "Roadkill"}
     try:
         resp = requests.get(url, params=params, timeout=30)
+        if resp.status_code == 404:
+            # Endpoint deprecated — return None so caller can skip gracefully
+            return None
         resp.raise_for_status()
         data = resp.json()
         for field in data.get("results", []):
             if field.get("name", "").lower() == "roadkill":
                 return field.get("id")
-    except requests.RequestException as e:
-        raise RuntimeError(f"Failed to resolve iNaturalist Roadkill field ID: {e}")
+    except requests.RequestException:
+        pass
     return None
 
 
@@ -100,10 +106,15 @@ def query_inaturalist_roadkill(place_id: int = PLACE_ID) -> gpd.GeoDataFrame:
 
     The query uses structured field observation filtering, not free-text
     search, to ensure reliable roadkill flagging.
+
+    If the iNaturalist fields API is unavailable (deprecated), returns
+    an empty GeoDataFrame — GBIF data is the primary source.
     """
     field_id = _resolve_roadkill_field_id()
     if field_id is None:
-        raise RuntimeError("Could not resolve iNaturalist 'Roadkill' field ID")
+        print("  Warning: iNaturalist fields API unavailable, skipping iNaturalist ingestion")
+        print("  GBIF curated datasets are the primary data source")
+        return gpd.GeoDataFrame(columns=[], geometry=gpd.points_from_xy([], []), crs="EPSG:4326")
 
     records: List[Dict] = []
     page = 1

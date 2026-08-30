@@ -6,36 +6,469 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          76.52152195133733,
-          11.831962139080032
+          74.84518399999999,
+          21.38408542857143
         ]
       },
       "properties": {
         "hotspot_id": "HS-000000",
         "risk_score": 100,
-        "confidence": 0.3,
+        "confidence": 0.4,
         "species_mix": {
-          "Mammalia": 6
+          "Mammalia": 8,
+          "Aves": 1,
+          "Amphibia": 1,
+          "Squamata": 4
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11
+        ],
+        "observation_count": 14,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.99678094594593,
+          21.30639778378378
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000001",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 14,
+          "Amphibia": 2,
+          "Squamata": 17,
+          "Aves": 4
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          4,
+          7,
+          5,
+          4,
+          2,
+          3,
+          5
+        ],
+        "observation_count": 37,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.92152330434784,
+          21.147417869565214
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000011",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 12,
+          "Squamata": 6,
+          "Aves": 5
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          4,
+          0,
+          0,
+          2,
+          1,
+          5,
+          4,
+          2,
+          3,
+          0,
+          2
+        ],
+        "observation_count": 23,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.81374045901639,
+          20.92912208196721
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000037",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 66,
+          "Aves": 30,
+          "Mammalia": 24,
+          "Amphibia": 2
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          13,
+          7,
+          6,
+          2,
+          9,
+          15,
+          25,
+          3,
+          16,
+          9,
+          4,
+          13
+        ],
+        "observation_count": 122,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.75310040000001,
+          20.89325492
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000043",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "unknown": 1,
+          "Mammalia": 9,
+          "Squamata": 8,
+          "Aves": 6,
+          "Amphibia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          3,
+          1,
+          2,
+          3,
+          3,
+          1,
+          4
+        ],
+        "observation_count": 25,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.89371959230769,
+          20.913895023076922
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000070",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 27,
+          "Squamata": 62,
+          "Aves": 40,
+          "Testudines": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          13,
+          6,
+          6,
+          1,
+          8,
+          15,
+          29,
+          1,
+          18,
+          8,
+          1,
+          24
+        ],
+        "observation_count": 130,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.96878932653061,
+          21.252529040816324
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000075",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 22,
+          "Squamata": 16,
+          "Aves": 10,
+          "Amphibia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          3,
+          3,
+          1,
+          0,
+          3,
+          4,
+          7,
+          8,
+          8,
+          3,
+          3,
+          6
+        ],
+        "observation_count": 49,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.83243800000001,
+          20.998446461538467
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000077",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 15,
+          "Squamata": 23,
+          "Mammalia": 14
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          3,
+          4,
+          3,
+          0,
+          2,
+          6,
+          12,
+          3,
+          8,
+          5,
+          2,
+          4
+        ],
+        "observation_count": 52,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.87316575641026,
+          20.88614930769231
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000080",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 14,
+          "Aves": 23,
+          "Squamata": 40,
+          "Amphibia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          8,
+          6,
+          1,
+          2,
+          6,
+          11,
+          24,
+          0,
+          5,
+          4,
+          1,
+          10
+        ],
+        "observation_count": 78,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.99402617948718,
+          20.935922641025645
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000085",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 14,
+          "Squamata": 13,
+          "Aves": 12
         },
         "endangered_flag": false,
         "season_curve": [
           1,
           0,
           0,
+          2,
+          2,
+          4,
+          7,
+          2,
+          7,
+          6,
           0,
-          1,
+          8
+        ],
+        "observation_count": 39,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.70905655555555,
+          20.99931827777778
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000088",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 9,
+          "Mammalia": 3,
+          "Aves": 6
+        },
+        "endangered_flag": false,
+        "season_curve": [
           0,
+          0,
+          0,
+          0,
+          2,
           1,
           2,
           0,
+          6,
+          5,
           0,
-          1,
-          0
+          2
         ],
-        "observation_count": 6,
-        "nearest_highway": "NH-766",
+        "observation_count": 18,
+        "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
       }
     },
     {
@@ -43,36 +476,49 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          76.54538037318972,
-          11.854696695758408
+          76.98780812066752,
+          10.405793871630294
         ]
       },
       "properties": {
-        "hotspot_id": "HS-000001",
-        "risk_score": 86,
-        "confidence": 0.3,
+        "hotspot_id": "HS-000106",
+        "risk_score": 100,
+        "confidence": 0.4,
         "species_mix": {
-          "Mammalia": 5
+          "Mammalia": 94,
+          "Amphibia": 229,
+          "Squamata": 244,
+          "Insecta": 34,
+          "Aves": 4,
+          "Diplopoda": 70,
+          "unknown": 38,
+          "Arachnida": 9,
+          "Gastropoda": 19,
+          "Chilopoda": 31,
+          "Malacostraca": 7
         },
-        "endangered_flag": true,
+        "endangered_flag": false,
         "season_curve": [
           1,
           0,
-          0,
-          0,
-          1,
-          0,
-          1,
-          1,
-          0,
-          0,
-          1,
-          0
+          6,
+          3,
+          113,
+          97,
+          6,
+          91,
+          72,
+          138,
+          214,
+          38
         ],
-        "observation_count": 5,
-        "nearest_highway": "NH-766",
+        "observation_count": 779,
+        "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_anamalai_hills_/_valparai_plateau"
+        ]
       }
     },
     {
@@ -80,15 +526,366 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          76.43354745035215,
-          11.747269164892625
+          76.95826976293998,
+          10.326891301242236
         ]
       },
       "properties": {
-        "hotspot_id": "HS-000002",
-        "risk_score": 14,
-        "confidence": 0.3,
+        "hotspot_id": "HS-000107",
+        "risk_score": 100,
+        "confidence": 0.4,
         "species_mix": {
+          "Gastropoda": 220,
+          "Amphibia": 936,
+          "Insecta": 108,
+          "Aves": 9,
+          "Mammalia": 91,
+          "Squamata": 261,
+          "Malacostraca": 10,
+          "unknown": 116,
+          "Diplopoda": 166,
+          "Arachnida": 8,
+          "Chilopoda": 7
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          58,
+          143,
+          246,
+          184,
+          51,
+          349,
+          402,
+          493,
+          5,
+          1
+        ],
+        "observation_count": 1932,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_anamalai_hills_/_valparai_plateau"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.94428005195681,
+          10.324079672064777
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000108",
+        "risk_score": 100,
+        "confidence": 0.4,
+        "species_mix": {
+          "Amphibia": 753,
+          "Aves": 8,
+          "Mammalia": 59,
+          "Squamata": 169,
+          "Malacostraca": 5,
+          "Insecta": 85,
+          "unknown": 73,
+          "Diplopoda": 133,
+          "Gastropoda": 185,
+          "Arachnida": 5,
+          "Chilopoda": 7
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          47,
+          118,
+          196,
+          129,
+          51,
+          258,
+          321,
+          362,
+          0,
+          0
+        ],
+        "observation_count": 1482,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_anamalai_hills_/_valparai_plateau"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.02438153846153,
+          21.24242076923077
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000059",
+        "risk_score": 95,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 3,
+          "Aves": 5,
+          "Mammalia": 5
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          2,
+          0,
+          1,
+          1,
+          2,
+          1,
+          0,
+          3,
+          2,
+          0,
+          0,
+          1
+        ],
+        "observation_count": 13,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.07366133333333,
+          20.9435125
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000068",
+        "risk_score": 90,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 4,
+          "Mammalia": 7,
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          2,
+          1,
+          1,
+          5,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "observation_count": 12,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.68935864285716,
+          17.526211071428573
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000014",
+        "risk_score": 80,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 14
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 14,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.86042422222224,
+          18.39770788888889
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000009",
+        "risk_score": 75,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 5,
+          "Amphibia": 1,
+          "Mammalia": 3
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          4,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "observation_count": 9,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.66037630769232,
+          17.470472615384615
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000010",
+        "risk_score": 75,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 13
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 13,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.18047985714286,
+          21.625541428571427
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000022",
+        "risk_score": 75,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1,
+          "Aves": 1,
+          "Amphibia": 4,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 7,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.1063781111111,
+          20.897919666666667
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000086",
+        "risk_score": 75,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 2,
+          "Aves": 3,
           "Mammalia": 4
         },
         "endangered_flag": false,
@@ -99,17 +896,20 @@
           0,
           1,
           0,
+          5,
+          3,
           0,
-          2,
           0,
           0,
-          1,
           0
         ],
-        "observation_count": 4,
-        "nearest_highway": "NH-766",
-        "intervention": "speed_limit",
-        "model_version": "v0.3-kde"
+        "observation_count": 9,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
       }
     },
     {
@@ -117,37 +917,246 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          76.84384843716919,
-          12.136922707442718
+          77.9219203,
+          21.2867935
         ]
       },
       "properties": {
-        "hotspot_id": "HS-000003",
-        "risk_score": 44,
-        "confidence": 0.3,
+        "hotspot_id": "HS-000097",
+        "risk_score": 70,
+        "confidence": 0.4,
         "species_mix": {
-          "Mammalia": 5,
-          "Aves": 2
+          "Squamata": 8,
+          "Mammalia": 2
         },
         "endangered_flag": false,
         "season_curve": [
           1,
+          2,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          1,
+          0,
+          1,
+          2
+        ],
+        "observation_count": 10,
+        "nearest_highway": "unknown",
+        "intervention": "wildlife_crossing",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.52048814285715,
+          19.97362442857143
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000049",
+        "risk_score": 65,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 4,
+          "Squamata": 2,
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0,
           0,
           0,
           1,
+          4,
+          2
+        ],
+        "observation_count": 7,
+        "nearest_highway": "unknown",
+        "intervention": "signage",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.85995616666666,
+          21.9534745
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000013",
+        "risk_score": 60,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 4,
+          "Testudines": 1,
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
           2,
           0,
-          3,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 6,
+        "nearest_highway": "unknown",
+        "intervention": "signage",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.90220950000001,
+          21.708824000000003
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000017",
+        "risk_score": 50,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 5,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 6,
+        "nearest_highway": "unknown",
+        "intervention": "signage",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.594937,
+          21.118275666666666
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000081",
+        "risk_score": 50,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 2,
+          "Aves": 4
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 6,
+        "nearest_highway": "unknown",
+        "intervention": "signage",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.72032542857144,
+          17.51971557142857
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000012",
+        "risk_score": 45,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 7
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          2,
+          0,
+          0,
           0,
           0
         ],
         "observation_count": 7,
-        "nearest_highway": "NH-766",
+        "nearest_highway": "unknown",
         "intervention": "signage",
-        "model_version": "v0.3-kde"
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
       }
     },
     {
@@ -155,74 +1164,205 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          76.39147620816608,
-          11.732615402666132
+          72.02994866666666,
+          22.029674333333332
         ]
       },
       "properties": {
-        "hotspot_id": "HS-000004",
-        "risk_score": 40,
-        "confidence": 0.3,
+        "hotspot_id": "HS-000019",
+        "risk_score": 45,
+        "confidence": 0.4,
         "species_mix": {
-          "Mammalia": 3
+          "Squamata": 1,
+          "Mammalia": 1,
+          "Aves": 1
         },
         "endangered_flag": false,
         "season_curve": [
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
           1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 3,
+        "nearest_highway": "unknown",
+        "intervention": "signage",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.12052775,
+          20.399910000000002
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000061",
+        "risk_score": 40,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 3,
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        "observation_count": 4,
+        "nearest_highway": "unknown",
+        "intervention": "signage",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.77924900000001,
+          21.05542975
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000066",
+        "risk_score": 40,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 2,
+          "Squamata": 2
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observation_count": 4,
+        "nearest_highway": "unknown",
+        "intervention": "signage",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.94460000000001,
+          20.6584
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000096",
+        "risk_score": 40,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 3,
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
           0,
           0,
           0,
           0,
           0,
           2,
+          2,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 4,
+        "nearest_highway": "unknown",
+        "intervention": "signage",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.91243333333334,
+          21.876521333333333
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000008",
+        "risk_score": 35,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 2,
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
           0,
           0,
           0,
           0
         ],
         "observation_count": 3,
-        "nearest_highway": "NH-766",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.89426078976304,
-          12.189520979876582
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
         ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000005",
-        "risk_score": 41,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 3,
-          "Aves": 2
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          3,
-          0,
-          0
-        ],
-        "observation_count": 5,
-        "nearest_highway": "NH-766",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
       }
     },
     {
@@ -230,543 +1370,99 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          76.55089335138425,
-          11.878982370506133
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000006",
-        "risk_score": 99,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 5
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          1,
-          0,
-          0,
-          0,
-          1,
-          0,
-          1,
-          1,
-          0,
-          0,
-          1,
-          0
-        ],
-        "observation_count": 5,
-        "nearest_highway": "NH-766",
-        "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.26648856066564,
-          11.57343014950635
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000007",
-        "risk_score": 81,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 5
-        },
-        "endangered_flag": true,
-        "season_curve": [
-          0,
-          1,
-          1,
-          0,
-          0,
-          0,
-          1,
-          2,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observation_count": 5,
-        "nearest_highway": "NH-766",
-        "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.76897784464845,
-          12.091893090375416
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000008",
-        "risk_score": 81,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 7,
-          "Aves": 2
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          2,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          3,
-          0,
-          2,
-          0,
-          1
-        ],
-        "observation_count": 9,
-        "nearest_highway": "NH-766",
-        "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.79202048309942,
-          12.111180241504764
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000009",
-        "risk_score": 80,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 6,
-          "Aves": 2
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          3,
-          0,
-          3,
-          0,
-          0
-        ],
-        "observation_count": 8,
-        "nearest_highway": "NH-766",
-        "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.22997082825505,
-          11.535574212584372
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000010",
-        "risk_score": 52,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 5
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          0,
-          1,
-          1,
-          0,
-          0,
-          0,
-          1,
-          2,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observation_count": 5,
-        "nearest_highway": "NH-766",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.26287066905302,
-          11.54666558414671
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000011",
-        "risk_score": 66,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 5
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          0,
-          1,
-          1,
-          0,
-          0,
-          0,
-          1,
-          2,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observation_count": 5,
-        "nearest_highway": "NH-766",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.31826311804127,
-          11.620053681774605
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000012",
-        "risk_score": 62,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 6
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          0,
-          1,
-          1,
-          0,
-          0,
-          0,
-          1,
-          3,
-          0,
-          0,
-          0,
-          0
-        ],
-        "observation_count": 6,
-        "nearest_highway": "NH-766",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.80875250033095,
-          12.14245683634274
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000013",
-        "risk_score": 77,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 6,
-          "Aves": 2
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          3,
-          0,
-          3,
-          0,
-          0
-        ],
-        "observation_count": 8,
-        "nearest_highway": "NH-766",
-        "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.51653819049257,
-          11.826263833347255
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000014",
-        "risk_score": 98,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 6
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          1,
-          0,
-          0,
-          0,
-          1,
-          0,
-          1,
-          2,
-          0,
-          0,
-          1,
-          0
-        ],
-        "observation_count": 6,
-        "nearest_highway": "NH-766",
-        "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.67722888779011,
-          11.997829036911442
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000015",
-        "risk_score": 58,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 5,
-          "Aves": 1
-        },
-        "endangered_flag": true,
-        "season_curve": [
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          2,
-          2,
-          0,
-          0,
-          0,
-          1
-        ],
-        "observation_count": 6,
-        "nearest_highway": "NH-766",
-        "intervention": "fencing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.77295418160043,
-          12.076838690807364
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000016",
-        "risk_score": 68,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 7,
-          "Aves": 2
-        },
-        "endangered_flag": true,
-        "season_curve": [
-          2,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          3,
-          0,
-          2,
-          0,
-          1
-        ],
-        "observation_count": 9,
-        "nearest_highway": "NH-766",
-        "intervention": "fencing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.67918176618069,
-          11.991433377213571
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000017",
-        "risk_score": 64,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 5,
-          "Aves": 1
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          2,
-          2,
-          0,
-          0,
-          0,
-          1
-        ],
-        "observation_count": 6,
-        "nearest_highway": "NH-766",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.59026594736255,
-          11.93345083076376
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000018",
-        "risk_score": 82,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 6,
-          "Aves": 1
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          2,
-          0,
-          0,
-          0,
-          1,
-          0,
-          1,
-          1,
-          0,
-          0,
-          1,
-          1
-        ],
-        "observation_count": 7,
-        "nearest_highway": "NH-766",
-        "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.863597497709,
-          12.15297722024731
-        ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000019",
-        "risk_score": 49,
-        "confidence": 0.3,
-        "species_mix": {
-          "Mammalia": 5,
-          "Aves": 2
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          2,
-          0,
-          3,
-          0,
-          0
-        ],
-        "observation_count": 7,
-        "nearest_highway": "NH-766",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          76.70973300408279,
-          12.03895162351084
+          72.90920866666666,
+          20.92426233333333
         ]
       },
       "properties": {
         "hotspot_id": "HS-000020",
-        "risk_score": 64,
-        "confidence": 0.3,
+        "risk_score": 35,
+        "confidence": 0.4,
         "species_mix": {
-          "Mammalia": 5,
-          "Aves": 2
+          "Squamata": 2,
+          "Amphibia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "observation_count": 3,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.59836766666666,
+          13.706301000000002
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000033",
+        "risk_score": 35,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 2,
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 3,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.58978533333334,
+          20.95581866666667
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000076",
+        "risk_score": 35,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 2,
+          "Aves": 1
         },
         "endangered_flag": false,
         "season_curve": [
@@ -776,17 +1472,20 @@
           0,
           0,
           0,
-          1,
-          2,
           0,
-          2,
+          0,
+          1,
+          0,
           0,
           1
         ],
-        "observation_count": 7,
-        "nearest_highway": "NH-766",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
+        "observation_count": 3,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
       }
     },
     {
@@ -794,74 +1493,724 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          76.26858613336576,
-          11.578694536294929
+          71.160796,
+          22.352769000000002
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000007",
+        "risk_score": 30,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1,
+          "Testudines": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 2,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.168137,
+          19.241377
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000040",
+        "risk_score": 30,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1,
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 2,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.46710350000001,
+          22.639705499999998
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000062",
+        "risk_score": 30,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 1,
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "observation_count": 2,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8199435,
+          25.122889
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000064",
+        "risk_score": 30,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "observation_count": 2,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.816937,
+          19.98751925
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000073",
+        "risk_score": 30,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 4
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "observation_count": 4,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9845095,
+          21.5362045
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000089",
+        "risk_score": 30,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1,
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 2,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.09126066666666,
+          21.407551333333334
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000087",
+        "risk_score": 25,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 3
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 3,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.15204,
+          20.723719666666668
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000094",
+        "risk_score": 25,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 3
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 3,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.54253700000001,
+          18.248463
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000016",
+        "risk_score": 20,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 2
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 2,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.53066,
+          21.432852500000003
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000074",
+        "risk_score": 20,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 2
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "observation_count": 2,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.675942,
+          21.418425
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000002",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.355724,
+          17.334924
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000003",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.369263,
+          19.482692
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000004",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.394312,
+          17.644129
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000005",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.887223,
+          22.159842
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000006",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.276412,
+          22.052747
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000015",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.213072,
+          22.957189
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000018",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.676171,
+          22.181469
         ]
       },
       "properties": {
         "hotspot_id": "HS-000021",
-        "risk_score": 79,
-        "confidence": 0.3,
+        "risk_score": 15,
+        "confidence": 0.4,
         "species_mix": {
-          "Mammalia": 5
+          "Aves": 1
         },
         "endangered_flag": false,
         "season_curve": [
           0,
-          1,
-          1,
           0,
           0,
           0,
+          0,
+          0,
           1,
-          2,
+          0,
           0,
           0,
           0,
           0
         ],
-        "observation_count": 5,
-        "nearest_highway": "NH-766",
-        "intervention": "wildlife_crossing",
-        "model_version": "v0.3-kde"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.35377182851998,
-          13.133429827778157
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
         ]
-      },
-      "properties": {
-        "hotspot_id": "HS-000022",
-        "risk_score": 40,
-        "confidence": 0.3,
-        "species_mix": {
-          "Aves": 1,
-          "Mammalia": 3
-        },
-        "endangered_flag": false,
-        "season_curve": [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          2,
-          0,
-          0,
-          0
-        ],
-        "observation_count": 4,
-        "nearest_highway": "NH-48",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
       }
     },
     {
@@ -869,37 +2218,39 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          77.29563748341047,
-          13.071032650475807
+          72.934091,
+          21.218663
         ]
       },
       "properties": {
         "hotspot_id": "HS-000023",
-        "risk_score": 37,
-        "confidence": 0.3,
+        "risk_score": 15,
+        "confidence": 0.4,
         "species_mix": {
-          "Aves": 1,
-          "Mammalia": 3
+          "Squamata": 1
         },
         "endangered_flag": false,
         "season_curve": [
-          1,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           1,
           0,
           0,
-          0,
-          0,
-          2,
           0,
           0,
           0
         ],
-        "observation_count": 4,
-        "nearest_highway": "NH-48",
+        "observation_count": 1,
+        "nearest_highway": "unknown",
         "intervention": "speed_limit",
-        "model_version": "v0.3-kde"
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
       }
     },
     {
@@ -907,14 +2258,534 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          77.69128272583602,
-          13.417523551370627
+          73.198968,
+          22.243617
         ]
       },
       "properties": {
         "hotspot_id": "HS-000024",
-        "risk_score": 0,
-        "confidence": 0.3,
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.635884,
+          28.399344
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000025",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.728663,
+          21.101605
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000026",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.499511,
+          21.362015
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000027",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.76862,
+          20.965404
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000028",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.594737,
+          21.722004
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000029",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.030325,
+          21.254596
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000030",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.649868,
+          21.04239
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000031",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.376083,
+          20.445814
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000032",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.742863,
+          26.273512
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000034",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.3869,
+          26.257646
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000035",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.107431,
+          21.36299
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000036",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.900364,
+          23.289319
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000038",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.511676,
+          23.766017
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000039",
+        "risk_score": 15,
+        "confidence": 0.4,
         "species_mix": {
           "Mammalia": 1
         },
@@ -934,9 +2805,12 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "NH-48",
+        "nearest_highway": "unknown",
         "intervention": "speed_limit",
-        "model_version": "v0.3-kde"
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
       }
     },
     {
@@ -944,37 +2818,1199 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          77.38078170614637,
-          13.17854684078493
+          73.442842,
+          21.049446
         ]
       },
       "properties": {
-        "hotspot_id": "HS-000025",
-        "risk_score": 40,
-        "confidence": 0.3,
+        "hotspot_id": "HS-000041",
+        "risk_score": 15,
+        "confidence": 0.4,
         "species_mix": {
-          "Aves": 1,
-          "Mammalia": 3
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.339546,
+          22.837789
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000042",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.247923,
+          22.117329
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000044",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.587937,
+          23.688327
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000045",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.274235,
+          22.315596
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000046",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.28724,
+          22.317593
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000047",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.919399,
+          17.814477
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000048",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.050287,
+          17.993327
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000050",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.315363,
+          17.565007
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000051",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.712607,
+          20.785352
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000052",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.040811,
+          20.214597
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000053",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.384369,
+          22.380345
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000054",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.482606,
+          21.525919
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000055",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.700845,
+          11.643067
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000056",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.839449,
+          22.217286
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000057",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.58003,
+          25.274138
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000058",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.739925,
+          21.833953
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000060",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.846738,
+          12.024104
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000063",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Amphibia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.931568,
+          20.687854
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000065",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.178569,
+          20.45532
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000067",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.728037,
+          21.294268
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000069",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.296729,
+          23.97127
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000071",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.803033,
+          19.683452
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000072",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.174511,
+          19.892962
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000078",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.307296,
+          21.544474
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000079",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.528104,
+          20.000865
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000082",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.744293,
+          20.814016
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000083",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.305053,
+          21.399302
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000084",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.382942,
+          21.548872
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000090",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.046246,
+          21.077572
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000091",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
         },
         "endangered_flag": false,
         "season_curve": [
           1,
           0,
           0,
-          2,
           0,
           0,
           0,
           0,
-          1,
+          0,
+          0,
           0,
           0,
           0
         ],
-        "observation_count": 4,
-        "nearest_highway": "NH-48",
-        "intervention": "signage",
-        "model_version": "v0.3-kde"
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
       }
     },
     {
@@ -982,23 +4018,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          77.49806856190632,
-          13.251242546712415
+          78.271694,
+          21.476699
         ]
       },
       "properties": {
-        "hotspot_id": "HS-000026",
-        "risk_score": 0,
-        "confidence": 0.3,
+        "hotspot_id": "HS-000092",
+        "risk_score": 15,
+        "confidence": 0.4,
         "species_mix": {
-          "Mammalia": 2
+          "Mammalia": 1
         },
-        "endangered_flag": true,
+        "endangered_flag": false,
         "season_curve": [
           1,
           0,
           0,
-          1,
+          0,
           0,
           0,
           0,
@@ -1008,10 +4044,13 @@
           0,
           0
         ],
-        "observation_count": 2,
-        "nearest_highway": "NH-48",
-        "intervention": "fencing",
-        "model_version": "v0.3-kde"
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
       }
     },
     {
@@ -1019,20 +4058,62 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          77.26212109932732,
-          13.052940520199137
+          77.3144,
+          21.0392
         ]
       },
       "properties": {
-        "hotspot_id": "HS-000027",
-        "risk_score": 11,
-        "confidence": 0.3,
+        "hotspot_id": "HS-000093",
+        "risk_score": 15,
+        "confidence": 0.4,
         "species_mix": {
-          "Aves": 1,
-          "Mammalia": 2
+          "Mammalia": 1
         },
-        "endangered_flag": true,
+        "endangered_flag": false,
         "season_curve": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4127,
+          21.3843
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000095",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -1041,15 +4122,335 @@
           0,
           0,
           0,
-          2,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.85753,
+          20.579962
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000098",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.1792,
+          21.1673
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000099",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
           0,
           0
         ],
-        "observation_count": 3,
-        "nearest_highway": "NH-48",
-        "intervention": "fencing",
-        "model_version": "v0.3-kde"
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.108931,
+          21.094826
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000100",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.202802,
+          20.507217
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000101",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.185853,
+          19.971124
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000102",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Squamata": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.518221,
+          20.651706
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000103",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5006,
+          20.2744
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000104",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.270093,
+          21.496526
+        ]
+      },
+      "properties": {
+        "hotspot_id": "HS-000105",
+        "risk_score": 15,
+        "confidence": 0.4,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "observation_count": 1,
+        "nearest_highway": "unknown",
+        "intervention": "speed_limit",
+        "model_version": "v0.3-gbif",
+        "sources": [
+          "gbif_india_roadkill_monitoring_project"
+        ]
       }
     }
   ]

@@ -28,6 +28,51 @@ CORRIDOR_BUFFER_M = 500.0     # buffer around each segment for forest share
 NEIGHBOUR_RADIUS_M = 2000.0   # radius for the spatial-lag density feature
 NO_WATER_DISTANCE_M = 10000.0  # sentinel when no water geometry is in the bbox
 
+# Maximum bbox size (degrees) for a single Overpass query
+MAX_BBOX_DEG = 2.0  # ~220km — safe limit for Overpass API
+
+
+def _split_bbox(
+    bbox: tuple[float, float, float, float],
+    max_deg: float = MAX_BBOX_DEG,
+) -> list[tuple[float, float, float, float]]:
+    """Split a large bbox into smaller chunks that Overpass can handle."""
+    south, west, north, east = bbox
+    chunks = []
+    lat = south
+    while lat < north:
+        lon = west
+        while lon < east:
+            chunk_north = min(lat + max_deg, north)
+            chunk_east = min(lon + max_deg, east)
+            chunks.append((lat, lon, chunk_north, chunk_east))
+            lon += max_deg
+        lat += max_deg
+    return chunks
+
+
+def _fetch_overpass_chunked(
+    query_fn,
+    bbox: tuple[float, float, float, float],
+    max_deg: float = MAX_BBOX_DEG,
+) -> dict:
+    """Fetch Overpass data for a large bbox by splitting into chunks."""
+    chunks = _split_bbox(bbox, max_deg)
+    all_elements = []
+
+    for i, chunk in enumerate(chunks):
+        query = query_fn(chunk)
+        try:
+            data = _fetch_overpass(query)
+            elements = data.get("elements", [])
+            all_elements.extend(elements)
+            print(f"    Overpass chunk {i+1}/{len(chunks)}: {len(elements)} elements")
+        except Exception as e:
+            print(f"    Overpass chunk {i+1}/{len(chunks)} failed: {e}")
+            continue
+
+    return {"elements": all_elements}
+
 
 def _build_overpass_query(bbox: tuple[float, float, float, float]) -> str:
     """Build Overpass QL to fetch highway ways within bbox."""
@@ -81,8 +126,12 @@ def _ways_to_geometries(data: dict, classify):
 
 
 def fetch_osm_roads(bbox: tuple[float, float, float, float], cache_path: Path | None = None) -> gpd.GeoDataFrame:
-    """Fetch OSM highway ways for the given bbox."""
-    data = _fetch_overpass(_build_overpass_query(bbox))
+    """Fetch OSM highway ways for the given bbox.
+
+    For large bboxes (>2° in any dimension), the query is automatically
+    split into smaller chunks to avoid Overpass API limits.
+    """
+    data = _fetch_overpass_chunked(_build_overpass_query, bbox)
 
     nodes: Dict[str, tuple[float, float]] = {}
     ways: List[Dict] = []
@@ -124,20 +173,25 @@ def fetch_osm_landcover(
     Returns a GeoDataFrame with a `land_class` column ("forest" or "water"):
     forest = natural=wood/forest/scrub or landuse=forest polygons,
     water  = natural=water polygons and waterway lines.
+
+    For large bboxes (>2° in any dimension), the query is automatically
+    split into smaller chunks to avoid Overpass API limits.
     """
-    south, west, north, east = bbox
-    query = f"""
-    [out:json][timeout:60];
-    (
-      way["natural"~"^(wood|forest|scrub|water)$"]({south},{west},{north},{east});
-      way["landuse"="forest"]({south},{west},{north},{east});
-      way["waterway"]({south},{west},{north},{east});
-    );
-    out body;
-    >;
-    out skel qt;
-    """
-    data = _fetch_overpass(query)
+    def _landcover_query(bbox_chunk):
+        south, west, north, east = bbox_chunk
+        return f"""
+        [out:json][timeout:60];
+        (
+          way["natural"~"^(wood|forest|scrub|water)$"]({south},{west},{north},{east});
+          way["landuse"="forest"]({south},{west},{north},{east});
+          way["waterway"]({south},{west},{north},{east});
+        );
+        out body;
+        >;
+        out skel qt;
+        """
+
+    data = _fetch_overpass_chunked(_landcover_query, bbox)
 
     def classify(tags: dict) -> str | None:
         natural = str(tags.get("natural", ""))
