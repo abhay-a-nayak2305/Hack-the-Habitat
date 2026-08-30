@@ -161,7 +161,7 @@ hack-the-habitat/
 | `GET` | `/api/stats/dashboard` | Full dashboard data (model metrics, interventions, species) |
 | `GET` | `/api/stats/honesty-ladder` | Honesty ladder status |
 | `POST` | `/api/sightings` | Submit a citizen-science sighting |
-| `GET` | `/api/health` | Health check |
+| `GET` | `/health` | Health check |
 
 ---
 
