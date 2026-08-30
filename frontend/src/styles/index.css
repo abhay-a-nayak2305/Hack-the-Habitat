@@ -239,6 +239,17 @@ html, body, #root {
     transform: translateY(-1px);
   }
 
+  /* Light theme: boost ember button visibility */
+  [data-theme="light"] .btn-ember {
+    color: #fff;
+    background: var(--ember-bright);
+    box-shadow: 0 0 0 1px rgba(193,58,24,0.6), 0 2px 8px rgba(193,58,24,0.25);
+  }
+  [data-theme="light"] .btn-ember:hover {
+    box-shadow: 0 0 0 1px rgba(193,58,24,0.8), 0 4px 12px rgba(193,58,24,0.35);
+    transform: translateY(-1px);
+  }
+
   .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none !important; }
 
   /* ===== CHIP SYSTEM ===== */
