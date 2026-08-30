@@ -161,7 +161,7 @@ export default function App() {
             {/* Dossier content */}
             <div className="overflow-y-auto" style={{ maxHeight: "calc(85vh - 16px)" }}>
               <Suspense fallback={<div className="p-8 text-center text-sm text-bone-faint">Loading dossier…</div>}>
-                <DossierPanel hotspot={selectedHotspot} onClose={closeMobileDossier} />
+                <DossierPanel hotspot={selectedHotspot} onClose={closeMobileDossier} hideClose />
               </Suspense>
             </div>
           </div>

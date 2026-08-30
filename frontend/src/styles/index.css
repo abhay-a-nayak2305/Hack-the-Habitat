@@ -411,6 +411,51 @@ html, body, #root {
   .stagger > *:nth-child(6) { animation-delay: 300ms; }
 }
 
+/* ===== CUSTOM SCROLLBAR (Desktop) ===== */
+/* Dark theme scrollbar (default) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(240,237,228,0.15);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(240,237,228,0.25);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Light theme scrollbar */
+[data-theme="light"]::-webkit-scrollbar-thumb {
+  background: rgba(15,23,19,0.15);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+[data-theme="light"]::-webkit-scrollbar-thumb:hover {
+  background: rgba(15,23,19,0.25);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(240,237,228,0.15) transparent;
+}
+[data-theme="light"] * {
+  scrollbar-color: rgba(15,23,19,0.15) transparent;
+}
+
 /* ===== MAPLIBRE OVERRIDES ===== */
 .maplibregl-popup-content {
   background: var(--surface-overlay) !important;

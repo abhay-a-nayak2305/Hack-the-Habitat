@@ -132,7 +132,7 @@ export default function Header({ onReportClick, live = null }) {
 
           <button
             onClick={toggleTheme}
-            className="hidden h-9 w-9 place-items-center rounded-lg border border-rule bg-surface-raised text-bone-dim transition-colors hover:border-rule-hover hover:text-bone hover:bg-surface hover:shadow-glow-amber sm:grid"
+            className="grid h-9 w-9 place-items-center rounded-lg border border-rule bg-surface-raised text-bone-dim transition-colors hover:border-rule-hover hover:text-bone hover:bg-surface hover:shadow-glow-amber"
             aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
           >

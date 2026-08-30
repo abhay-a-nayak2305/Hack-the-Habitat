@@ -11,7 +11,7 @@ import {
   speciesMixToList,
 } from "../utils/format";
 
-export default function DossierPanel({ hotspot, onClose }) {
+export default function DossierPanel({ hotspot, onClose, hideClose = false }) {
   const [copied, setCopied] = useState(false);
   if (!hotspot) return null;
   const p = hotspot.properties;
@@ -59,9 +59,11 @@ export default function DossierPanel({ hotspot, onClose }) {
               )}
             </h2>
           </div>
-          <button onClick={onClose} aria-label="Close dossier" className="rounded-lg p-2.5 min-h-[44px] min-w-[44px] flex items-center justify-center text-bone-faint transition-colors hover:bg-canopy-600 hover:text-bone">
-            <X size={16} />
-          </button>
+          {!hideClose && (
+            <button onClick={onClose} aria-label="Close dossier" className="rounded-lg p-2.5 min-h-[44px] min-w-[44px] flex items-center justify-center text-bone-faint transition-colors hover:bg-canopy-600 hover:text-bone">
+              <X size={16} />
+            </button>
+          )}
         </div>
 
         {/* Risk readout + intervention */}
