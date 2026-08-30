@@ -41,11 +41,11 @@ export default function ReportSightingForm({ open, onClose }) {
     setGeoError(null);
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        setForm({
-          ...form,
+        setForm((prev) => ({
+          ...prev,
           latitude: pos.coords.latitude.toFixed(5),
           longitude: pos.coords.longitude.toFixed(5),
-        });
+        }));
       },
       (err) => {
         switch (err.code) {
