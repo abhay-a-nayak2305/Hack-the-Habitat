@@ -1,10 +1,15 @@
 """SafePassage ML Pipeline — Feature Engineering Module
 
-Joins cleaned observations to OSM road segments and environmental layers,
-and builds a per-segment feature table for model training.
+Joins cleaned observations to OSM road segments and environmental layers
+(OSM forest/water geometry — ESA WorldCover/WDPA remain a documented
+upgrade path) and builds a per-segment feature table for model training.
+
+Segments keep their real road LineString geometry; environmental features
+are computed in a local metric CRS so distances are in metres.
 """
 from __future__ import annotations
 
+from collections import Counter
 from pathlib import Path
 from typing import Dict, List
 
@@ -12,10 +17,16 @@ import geopandas as gpd
 import numpy as np
 import pandas as pd
 import requests
-from shapely.geometry import LineString, Point
+from shapely.geometry import LineString, Point, Polygon
+from shapely.ops import unary_union
 
 # Default Overpass API endpoint
 OVERPASS_API = "https://overpass-api.de/api/interpreter"
+
+ROAD_CLASS_SCORES = {"motorway": 3, "trunk": 3, "primary": 2, "secondary": 1}
+CORRIDOR_BUFFER_M = 500.0     # buffer around each segment for forest share
+NEIGHBOUR_RADIUS_M = 2000.0   # radius for the spatial-lag density feature
+NO_WATER_DISTANCE_M = 10000.0  # sentinel when no water geometry is in the bbox
 
 
 def _build_overpass_query(bbox: tuple[float, float, float, float]) -> str:
@@ -32,16 +43,20 @@ def _build_overpass_query(bbox: tuple[float, float, float, float]) -> str:
     """
 
 
-def fetch_osm_roads(bbox: tuple[float, float, float, float], cache_path: Path | None = None) -> gpd.GeoDataFrame:
-    """Fetch OSM highway ways for the given bbox."""
-    query = _build_overpass_query(bbox)
+def _fetch_overpass(query: str) -> dict:
     resp = requests.post(OVERPASS_API, data={"data": query}, timeout=120)
     resp.raise_for_status()
-    data = resp.json()
+    return resp.json()
 
+
+def _ways_to_geometries(data: dict, classify):
+    """Turn Overpass node/way output into GeoDataFrame records.
+
+    `classify(tags)` returns a class string; ways whose class is None are
+    skipped. Closed ways become Polygons, open ways stay LineStrings.
+    """
     nodes: Dict[str, tuple[float, float]] = {}
     ways: List[Dict] = []
-
     for elem in data.get("elements", []):
         if elem["type"] == "node":
             nodes[str(elem["id"])] = (elem["lon"], elem["lat"])
@@ -50,25 +65,46 @@ def fetch_osm_roads(bbox: tuple[float, float, float, float], cache_path: Path | 
 
     records = []
     for way in ways:
-        coords = []
-        for nid in way.get("nodes", []):
-            key = str(nid)
-            if key in nodes:
-                coords.append(nodes[key])
+        tags = way.get("tags", {})
+        land_class = classify(tags)
+        if land_class is None:
+            continue
+        coords = [nodes[str(nid)] for nid in way.get("nodes", []) if str(nid) in nodes]
         if len(coords) < 2:
             continue
+        if land_class != "water" and len(coords) >= 4 and coords[0] == coords[-1]:
+            geom = Polygon(coords)
+        else:
+            geom = LineString(coords)
+        records.append({"land_class": land_class, "osm_id": way["id"], "geometry": geom})
+    return records
 
+
+def fetch_osm_roads(bbox: tuple[float, float, float, float], cache_path: Path | None = None) -> gpd.GeoDataFrame:
+    """Fetch OSM highway ways for the given bbox."""
+    data = _fetch_overpass(_build_overpass_query(bbox))
+
+    nodes: Dict[str, tuple[float, float]] = {}
+    ways: List[Dict] = []
+    for elem in data.get("elements", []):
+        if elem["type"] == "node":
+            nodes[str(elem["id"])] = (elem["lon"], elem["lat"])
+        elif elem["type"] == "way" and "nodes" in elem:
+            ways.append(elem)
+
+    records = []
+    for way in ways:
+        coords = [nodes[str(nid)] for nid in way.get("nodes", []) if str(nid) in nodes]
+        if len(coords) < 2:
+            continue
         tags = way.get("tags", {})
-        highway = tags.get("highway", "unknown")
-        name = tags.get("name", "")
-        ref = tags.get("ref", "")
         records.append(
             {
                 "osm_id": way["id"],
-                "highway": highway,
-                "name": name,
-                "ref": ref,
-                "geometry": LineString([(lon, lat) for lon, lat in coords]),
+                "highway": tags.get("highway", "unknown"),
+                "name": tags.get("name", ""),
+                "ref": tags.get("ref", ""),
+                "geometry": LineString(coords),
             }
         )
 
@@ -79,63 +115,216 @@ def fetch_osm_roads(bbox: tuple[float, float, float, float], cache_path: Path | 
     return gdf
 
 
-def fetch_worldcover_tiles(bbox: tuple[float, float, float, float]) -> gpd.GeoDataFrame:
-    """Placeholder for ESA WorldCover fetch.
+def fetch_osm_landcover(
+    bbox: tuple[float, float, float, float],
+    cache_path: Path | None = None,
+) -> gpd.GeoDataFrame:
+    """Fetch forest and water geometry for the bbox from the Overpass API.
 
-    In production, this would download and mosaic WorldCover 10m tiles
-    for the bbox. For the hackathon, return an empty GeoDataFrame with
-    the expected schema so downstream code does not break.
+    Returns a GeoDataFrame with a `land_class` column ("forest" or "water"):
+    forest = natural=wood/forest/scrub or landuse=forest polygons,
+    water  = natural=water polygons and waterway lines.
     """
-    return gpd.GeoDataFrame(columns=["lc_class", "geometry"], geometry=[], crs="EPSG:4326")
+    south, west, north, east = bbox
+    query = f"""
+    [out:json][timeout:60];
+    (
+      way["natural"~"^(wood|forest|scrub|water)$"]({south},{west},{north},{east});
+      way["landuse"="forest"]({south},{west},{north},{east});
+      way["waterway"]({south},{west},{north},{east});
+    );
+    out body;
+    >;
+    out skel qt;
+    """
+    data = _fetch_overpass(query)
+
+    def classify(tags: dict) -> str | None:
+        natural = str(tags.get("natural", ""))
+        if natural in ("wood", "forest", "scrub") or tags.get("landuse") == "forest":
+            return "forest"
+        if natural == "water" or "waterway" in tags:
+            return "water"
+        return None
+
+    records = _ways_to_geometries(data, classify)
+    gdf = gpd.GeoDataFrame(records, crs="EPSG:4326")
+    if cache_path and not gdf.empty:
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        gdf.to_file(cache_path, driver="GeoJSON")
+
+
+def _metric_crs(gdf: gpd.GeoDataFrame):
+    """Pick a local projected CRS (UTM) so distances come out in metres."""
+    try:
+        return gdf.estimate_utm_crs() or gdf.crs
+    except Exception:
+        return gdf.crs
+
+
+def _month_of(date_value) -> int | None:
+    s = str(date_value)
+    if len(s) >= 7 and s[4] == "-":
+        try:
+            month = int(s[5:7])
+            return month if 1 <= month <= 12 else None
+        except ValueError:
+            return None
+    return None
 
 
 def compute_road_features(observations: gpd.GeoDataFrame, roads: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
-    """Join observations to nearest road segment and compute per-segment features."""
+    """Join observations to their nearest road segment and compute per-segment features.
+
+    Every road in `roads` is returned (segments with zero observations are
+    the negative class for the model). Segment geometry is the actual OSM
+    road LineString in WGS84; the observation-to-segment join and distances
+    are computed in a local metric CRS so `distance_to_road_mean` is metres.
+    species_mix / season_curve are aggregated from the joined observations
+    and are label-adjacent context, never model features.
+    """
     if observations.empty or roads.empty:
         return gpd.GeoDataFrame(columns=[], geometry=[], crs="EPSG:4326")
 
-    joined = gpd.sjoin_nearest(observations.to_crs(roads.crs), roads, how="left", distance_col="distance_to_road")
+    metric_crs = _metric_crs(roads)
+    roads_m = roads.to_crs(metric_crs)
+    obs_m = observations.to_crs(metric_crs)
 
-    segment_groups = []
+    joined = gpd.sjoin_nearest(obs_m, roads_m, how="left", distance_col="distance_to_road")
+
+    aggregates: Dict[str, dict] = {}
     for osm_id, group in joined.groupby("osm_id"):
-        species_mix: Dict[str, int] = {}
-        for taxon in group.get("taxon_class", []):
-            taxon = str(taxon)
-            species_mix[taxon] = species_mix.get(taxon, 0) + 1
+        species_mix = Counter(str(v) for v in group.get("taxon_class", []) if pd.notna(v))
+        season_curve = [0] * 12
+        if "observed_on" in group.columns:
+            for d in group["observed_on"]:
+                month = _month_of(d)
+                if month is not None:
+                    season_curve[month - 1] += 1
+        aggregates[str(osm_id)] = {
+            "observation_count": int(len(group)),
+            "species_mix": dict(species_mix),
+            "endangered_flag": bool(group.get("endangered_flag", pd.Series([False])).any()),
+            "season_curve": season_curve,
+            "distance_to_road_mean": (
+                float(group["distance_to_road"].mean())
+                if "distance_to_road" in group.columns
+                else 0.0
+            ),
+        }
 
-        endangered_flag = bool(group.get("endangered_flag", pd.Series([False])).any())
+    lengths_km = (roads_m.geometry.length / 1000.0).round(3)
 
-        segment_groups.append(
+    rows = []
+    for pos, road in roads.iterrows():
+        key = str(road["osm_id"])
+        agg = aggregates.get(key, {})
+        rows.append(
             {
-                "osm_id": osm_id,
-                "observation_count": int(len(group)),
-                "species_mix": species_mix,
-                "endangered_flag": endangered_flag,
-                "highway": group.get("highway", ["unknown"]).iloc[0],
-                "ref": group.get("ref", [""]).iloc[0],
-                "name": group.get("name", [""]).iloc[0],
-                "distance_to_road_mean": float(group.get("distance_to_road", pd.Series([0])).mean()) if "distance_to_road" in group.columns else 0.0,
-                "geometry": group.geometry.iloc[0],
+                "osm_id": road["osm_id"],
+                "observation_count": agg.get("observation_count", 0),
+                "species_mix": agg.get("species_mix", {}),
+                "endangered_flag": agg.get("endangered_flag", False),
+                "season_curve": agg.get("season_curve", [0] * 12),
+                "highway": road.get("highway", "unknown"),
+                "ref": road.get("ref", ""),
+                "name": road.get("name", ""),
+                "distance_to_road_mean": agg.get("distance_to_road_mean", 0.0),
+                "geometry": road.geometry,
+                "road_length_km": float(lengths_km.loc[pos]),
             }
         )
 
-    return gpd.GeoDataFrame(segment_groups, crs=roads.crs)
+    segments = gpd.GeoDataFrame(rows, crs=roads.crs)
+    segments["road_class_score"] = segments["highway"].map(
+        lambda h: ROAD_CLASS_SCORES.get(str(h), 0)
+    )
+    return segments
+
+
+
+def compute_environmental_features(
+    segments: gpd.GeoDataFrame, landcover: gpd.GeoDataFrame
+) -> gpd.GeoDataFrame:
+    """Attach forest_share (share of the 500 m corridor buffer covered by
+    forest) and water_distance_m (metres to nearest water geometry)."""
+    out = segments.copy()
+    if out.empty:
+        return out
+
+    metric_crs = _metric_crs(out)
+    seg_m = out.to_crs(metric_crs)
+
+    forest = None
+    water = None
+    if landcover is not None and not landcover.empty:
+        lc_m = landcover.to_crs(metric_crs)
+        forest_geoms = lc_m[lc_m["land_class"] == "forest"].geometry.values
+        water_geoms = lc_m[lc_m["land_class"] == "water"].geometry.values
+        if len(forest_geoms):
+            forest = unary_union(forest_geoms)
+        if len(water_geoms):
+            water = unary_union(water_geoms)
+
+    buffers = seg_m.buffer(CORRIDOR_BUFFER_M)
+    if forest is not None and not buffers.empty:
+        out["forest_share"] = (buffers.intersection(forest).area / buffers.area).round(4)
+    else:
+        out["forest_share"] = 0.0
+
+    if water is not None:
+        out["water_distance_m"] = seg_m.geometry.distance(water).round(2)
+    else:
+        out["water_distance_m"] = NO_WATER_DISTANCE_M
+
+    return out
+
+
+def add_neighbor_density(
+    segments: gpd.GeoDataFrame,
+    observations: gpd.GeoDataFrame,
+    radius_m: float = NEIGHBOUR_RADIUS_M,
+) -> gpd.GeoDataFrame:
+    """Spatial-lag feature: observations within `radius_m` of the segment,
+    EXCLUDING the segment's own observations.
+
+    This keeps observation pressure in the feature set without leaking the
+    segment's own label (its own observation_count) into the model.
+    """
+    out = segments.copy()
+    if out.empty or observations.empty:
+        out["neighbor_density"] = 0
+        return out
+
+    metric_crs = _metric_crs(out)
+    obs_m = observations.to_crs(metric_crs)
+    seg_m = out.to_crs(metric_crs)
+
+    own_counts = out["observation_count"] if "observation_count" in out.columns else None
+    densities = []
+    for idx, geom in seg_m.geometry.items():
+        within = int((obs_m.geometry.distance(geom) <= radius_m).sum())
+        own = int(own_counts.loc[idx]) if own_counts is not None else 0
+        densities.append(max(0, within - own))
+    out["neighbor_density"] = densities
+    return out
 
 
 def build_feature_table(observations_path: Path, output_path: Path) -> Dict:
-    """End-to-end feature builder: fetch roads, join observations, save segments."""
+    """End-to-end feature builder: fetch roads + landcover, join, save segments."""
     observations = gpd.read_file(observations_path)
     if observations.empty:
         raise RuntimeError("No observations found at " + str(observations_path))
 
-    bounds = observations.total_bounds
-    bbox = (bounds[1], bounds[0], bounds[3], bounds[1] + (bounds[3] - bounds[0]))  # south, west, north, east
-    # More robust bbox ordering
     minx, miny, maxx, maxy = observations.total_bounds
-    bbox = (miny, minx, maxy, maxx)
+    bbox = (miny, minx, maxy, maxx)  # south, west, north, east
 
     roads = fetch_osm_roads(bbox, cache_path=output_path.parent / "osm_roads.geojson")
+    landcover = fetch_osm_landcover(bbox, cache_path=output_path.parent / "osm_landcover.geojson")
+
     segments = compute_road_features(observations, roads)
+    segments = compute_environmental_features(segments, landcover)
+    segments = add_neighbor_density(segments, observations)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     segments.to_file(output_path, driver="GeoJSON")

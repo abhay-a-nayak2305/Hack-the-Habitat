@@ -35,6 +35,9 @@ logs/
 *.log
 npm-debug.log*
 
+# User-submitted sighting data (append-only JSONL written by the API)
+data/raw/sightings.jsonl
+
 # Vercel
 .vercel/
 

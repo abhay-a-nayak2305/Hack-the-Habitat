@@ -1,4 +1,2429 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.2,
+            11.5
+          ],
+          [
+            76.24666666666667,
+            11.550824900483022
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-000",
+        "observation_count": 1,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 217.4885863133738,
+        "road_length_km": 7.583,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 50840.82,
+        "neighbor_density": 1,
+        "risk_score": 80,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000000",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.24666666666667,
+            11.550824900483022
+          ],
+          [
+            76.29333333333334,
+            11.60146806619485
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-001",
+        "observation_count": 3,
+        "species_mix": {
+          "Mammalia": 3
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 667.2982607061552,
+        "road_length_km": 7.568,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 43276.99,
+        "neighbor_density": 0,
+        "risk_score": 80,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000001",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.29333333333334,
+            11.60146806619485
+          ],
+          [
+            76.34,
+            11.65175570504585
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-002",
+        "observation_count": 1,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 618.3028348763054,
+        "road_length_km": 7.538,
+        "road_class_score": 3,
+        "forest_share": 0.6346,
+        "water_distance_m": 35745.45,
+        "neighbor_density": 0,
+        "risk_score": 80,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000002",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.57333333333334,
+            11.893223771240699
+          ],
+          [
+            76.62,
+            11.939021130325903
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-008",
+        "observation_count": 1,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 1849.6588709883947,
+        "road_length_km": 7.177,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 941.6,
+        "neighbor_density": 0,
+        "risk_score": 80,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000003",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.48,
+            11.799021130325903
+          ],
+          [
+            76.52666666666667,
+            11.846557104574032
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-006",
+        "observation_count": 2,
+        "species_mix": {
+          "Mammalia": 2
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 743.4098692048964,
+        "road_length_km": 7.315,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 6244.75,
+        "neighbor_density": 0,
+        "risk_score": 80,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000004",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.33333333333333,
+            13.117320508075688
+          ],
+          [
+            77.38,
+            13.159021130325904
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-005",
+        "observation_count": 1,
+        "species_mix": {
+          "Aves": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 176.43189155188608,
+        "road_length_km": 6.85,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 155078.89,
+        "neighbor_density": 0,
+        "risk_score": 79,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000005",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.38,
+            13.159021130325904
+          ],
+          [
+            77.42666666666666,
+            13.199890437907365
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-006",
+        "observation_count": 1,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 1554.6701431046315,
+        "road_length_km": 6.788,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 161925.08,
+        "neighbor_density": 0,
+        "risk_score": 79,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000006",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.28666666666666,
+            13.074862896509549
+          ],
+          [
+            77.33333333333333,
+            13.117320508075688
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-004",
+        "observation_count": 1,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 972.8356938529668,
+        "road_length_km": 6.907,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 148173.86,
+        "neighbor_density": 0,
+        "risk_score": 79,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000007",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.71333333333334,
+            12.028196229842882
+          ],
+          [
+            76.76,
+            12.071755705045849
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-011",
+        "observation_count": 1,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 1133.059915998933,
+        "road_length_km": 7.003,
+        "road_class_score": 3,
+        "forest_share": 0.7131,
+        "water_distance_m": 22057.0,
+        "neighbor_density": 1,
+        "risk_score": 76,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000008",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.42666666666666,
+            13.199890437907365
+          ],
+          [
+            77.47333333333333,
+            13.239890437907366
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-007",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.724,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 168706.7,
+        "neighbor_density": 0,
+        "risk_score": 76,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000009",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.47333333333333,
+            13.239890437907366
+          ],
+          [
+            77.52,
+            13.279021130325903
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-008",
+        "observation_count": 1,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 789.7289293849938,
+        "road_length_km": 6.661,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 175420.87,
+        "neighbor_density": 0,
+        "risk_score": 76,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000010",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "wildlife_crossing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.24,
+            13.03175570504585
+          ],
+          [
+            77.28666666666666,
+            13.074862896509549
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-003",
+        "observation_count": 1,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 60.22915249601103,
+        "road_length_km": 6.957,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 141218.24,
+        "neighbor_density": 1,
+        "risk_score": 63,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000011",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "fencing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.38666666666667,
+            11.701529563176214
+          ],
+          [
+            76.43333333333334,
+            11.75065384140902
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-004",
+        "observation_count": 2,
+        "species_mix": {
+          "Mammalia": 2
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 1119.893268260657,
+        "road_length_km": 7.443,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 20844.78,
+        "neighbor_density": 0,
+        "risk_score": 63,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000012",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "signage"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.66666666666667,
+            11.983987174742355
+          ],
+          [
+            76.71333333333334,
+            12.028196229842882
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-010",
+        "observation_count": 2,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 328.6277623012978,
+        "road_length_km": 7.053,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 15087.5,
+        "neighbor_density": 1,
+        "risk_score": 62,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000013",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "fencing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.52666666666667,
+            11.846557104574032
+          ],
+          [
+            76.57333333333334,
+            11.893223771240699
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-007",
+        "observation_count": 2,
+        "species_mix": {
+          "Mammalia": 2
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 728.5688576838614,
+        "road_length_km": 7.245,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 0.0,
+        "neighbor_density": 1,
+        "risk_score": 57,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000014",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "fencing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.80666666666667,
+            12.114801399528181
+          ],
+          [
+            76.85333333333334,
+            12.157491567149687
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-013",
+        "observation_count": 2,
+        "species_mix": {
+          "Mammalia": 2
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 1524.8706123809195,
+        "road_length_km": 6.936,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 35836.09,
+        "neighbor_density": 1,
+        "risk_score": 54,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000015",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "signage"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.52,
+            13.279021130325903
+          ],
+          [
+            77.56666666666666,
+            13.317320508075689
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-009",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.601,
+        "road_class_score": 3,
+        "forest_share": 0.5425,
+        "water_distance_m": 182067.61,
+        "neighbor_density": 0,
+        "risk_score": 51,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000016",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.85333333333334,
+            12.157491567149687
+          ],
+          [
+            76.9,
+            12.2
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-014",
+        "observation_count": 2,
+        "species_mix": {
+          "Aves": 1,
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 776.0129867867901,
+        "road_length_km": 6.922,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 42671.61,
+        "neighbor_density": 0,
+        "risk_score": 45,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000017",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "signage"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.76,
+            12.071755705045849
+          ],
+          [
+            76.80666666666667,
+            12.114801399528181
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-012",
+        "observation_count": 3,
+        "species_mix": {
+          "Mammalia": 2,
+          "Aves": 1
+        },
+        "endangered_flag": true,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 769.7199167959647,
+        "road_length_km": 6.964,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 28969.2,
+        "neighbor_density": 0,
+        "risk_score": 45,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000018",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "fencing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.66,
+            13.391755705045851
+          ],
+          [
+            77.70666666666666,
+            13.428134732861515
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-012",
+        "observation_count": 1,
+        "species_mix": {
+          "Mammalia": 1
+        },
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 119.42457187003656,
+        "road_length_km": 6.465,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 201646.84,
+        "neighbor_density": 0,
+        "risk_score": 41,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000019",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "signage"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.43333333333334,
+            11.75065384140902
+          ],
+          [
+            76.48,
+            11.799021130325903
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-005",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 7.382,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 13507.85,
+        "neighbor_density": 1,
+        "risk_score": 40,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000020",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.34,
+            11.65175570504585
+          ],
+          [
+            76.38666666666667,
+            11.701529563176214
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-003",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 7.496,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 28262.0,
+        "neighbor_density": 0,
+        "risk_score": 38,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000021",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.19333333333333,
+            12.988134732861516
+          ],
+          [
+            77.24,
+            13.03175570504585
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-002",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.996,
+        "road_class_score": 3,
+        "forest_share": 0.7666,
+        "water_distance_m": 134222.51,
+        "neighbor_density": 0,
+        "risk_score": 34,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000022",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            76.62,
+            11.939021130325903
+          ],
+          [
+            76.66666666666667,
+            11.983987174742355
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-766-009",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-766",
+        "name": "NH-766",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 7.112,
+        "road_class_score": 3,
+        "forest_share": 1.0,
+        "water_distance_m": 8051.22,
+        "neighbor_density": 2,
+        "risk_score": 26,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000023",
+        "highway_name": "NH-766",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.70666666666666,
+            13.428134732861515
+          ],
+          [
+            77.75333333333333,
+            13.464158233816356
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-013",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.44,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 208080.3,
+        "neighbor_density": 0,
+        "risk_score": 25,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000024",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.75333333333333,
+            13.464158233816356
+          ],
+          [
+            77.8,
+            13.5
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-014",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.427,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 214486.17,
+        "neighbor_density": 0,
+        "risk_score": 25,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000025",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.61333333333333,
+            13.354862896509548
+          ],
+          [
+            77.66,
+            13.391755705045851
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-011",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.501,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 195173.55,
+        "neighbor_density": 0,
+        "risk_score": 19,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000026",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.56666666666666,
+            13.317320508075689
+          ],
+          [
+            77.61333333333333,
+            13.354862896509548
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-010",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.547,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 188649.92,
+        "neighbor_density": 0,
+        "risk_score": 19,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000027",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.1,
+            12.9
+          ],
+          [
+            77.14666666666666,
+            12.944158233816355
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-000",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 7.038,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 120160.8,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000028",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.14666666666666,
+            12.944158233816355
+          ],
+          [
+            77.19333333333333,
+            12.988134732861516
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-48-001",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-48",
+        "name": "NH-48",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 7.024,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 127198.89,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000029",
+        "highway_name": "NH-48",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.49333333333334,
+            14.688134732861515
+          ],
+          [
+            78.54,
+            14.731755705045849
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-002",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.978,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 366442.91,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000030",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.58666666666667,
+            14.774862896509548
+          ],
+          [
+            78.63333333333334,
+            14.817320508075687
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-004",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.888,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 380348.96,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000031",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.54,
+            14.731755705045849
+          ],
+          [
+            78.58666666666667,
+            14.774862896509548
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-003",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.938,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 373416.39,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000032",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.63333333333334,
+            14.817320508075687
+          ],
+          [
+            78.68,
+            14.859021130325903
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-005",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.831,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 387229.96,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000033",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.68,
+            14.859021130325903
+          ],
+          [
+            78.72666666666667,
+            14.899890437907365
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-006",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.768,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 394051.0,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000034",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.77333333333333,
+            14.939890437907366
+          ],
+          [
+            78.82,
+            14.979021130325902
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-008",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.64,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 407493.37,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000035",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.72666666666667,
+            14.899890437907365
+          ],
+          [
+            78.77333333333333,
+            14.939890437907366
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-007",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.704,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 400806.4,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000036",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.91333333333333,
+            15.054862896509547
+          ],
+          [
+            78.96,
+            15.09175570504585
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-011",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.48,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 427161.01,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000037",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.96,
+            15.09175570504585
+          ],
+          [
+            79.00666666666666,
+            15.128134732861515
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-012",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.444,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 433605.88,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000038",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.82,
+            14.979021130325902
+          ],
+          [
+            78.86666666666666,
+            15.017320508075688
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-009",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.58,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 414112.14,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000039",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.86666666666666,
+            15.017320508075688
+          ],
+          [
+            78.91333333333333,
+            15.054862896509547
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-010",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.526,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 420665.99,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000040",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.00666666666666,
+            15.128134732861515
+          ],
+          [
+            79.05333333333333,
+            15.164158233816355
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-013",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.419,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 440011.45,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000041",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.05333333333333,
+            15.164158233816355
+          ],
+          [
+            79.1,
+            15.2
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-014",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 6.406,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 446390.24,
+        "neighbor_density": 0,
+        "risk_score": 8,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000042",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.4,
+            14.6
+          ],
+          [
+            78.44666666666667,
+            14.644158233816354
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-000",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 7.02,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 352424.47,
+        "neighbor_density": 0,
+        "risk_score": 0,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000043",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            78.44666666666667,
+            14.644158233816354
+          ],
+          [
+            78.49333333333334,
+            14.688134732861515
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": "NH-37-001",
+        "observation_count": 0,
+        "species_mix": {},
+        "endangered_flag": false,
+        "season_curve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "highway": "trunk",
+        "ref": "NH-37",
+        "name": "NH-37",
+        "distance_to_road_mean": 0.0,
+        "road_length_km": 7.005,
+        "road_class_score": 3,
+        "forest_share": 0.0,
+        "water_distance_m": 359441.01,
+        "neighbor_density": 0,
+        "risk_score": 0,
+        "confidence": 0.3,
+        "model_version": "v0.3",
+        "confidence_tier": "low",
+        "segment_id": "SEG-000044",
+        "highway_name": "NH-37",
+        "highway_class": "trunk",
+        "intervention": "none"
+      }
+    }
+  ]
 }

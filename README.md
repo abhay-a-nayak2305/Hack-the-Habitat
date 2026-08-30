@@ -1,7 +1,7 @@
 # SafePassage
 
-**A roadkill hotspot predictor and wildlife-crossing planner for India's highways.**  
-Built for **Hack the Habitat 2026** · Aug 24–31 · Submit by Aug 31 · 10:15 AM IST.
+**A roadkill hotspot predictor and wildlife-crossing planner for India's highways.**
+An open-source project in active development.
 
 > Show us your highway, and we'll tell you where animals will die next — and exactly what to build there to stop it.
 
@@ -16,7 +16,7 @@ Built for **Hack the Habitat 2026** · Aug 24–31 · Submit by Aug 31 · 10:15 
 5. [Folder Structure](#folder-structure)
 6. [Schema v1 — The Frozen Contract](#schema-v1--the-frozen-contract)
 7. [Getting Started](#getting-started)
-8. [Day-by-Day Milestones](#day-by-day-milestones)
+8. [Project Status & Roadmap](#project-status--roadmap)
 9. [Collaboration Rules](#collaboration-rules)
 10. [Risks & Fallbacks](#risks--fallbacks)
 11. [License & Attribution](#license--attribution)
@@ -48,7 +48,7 @@ This is a **monorepo** holding every SafePassage artifact:
 - **`backend/`** — FastAPI service serving Schema v1 GeoJSON + sightings POST
 - **`ml-pipeline/`** — Data ingestion, feature engineering, KDE hotspots, GradientBoosting model
 - **`data/`** — Frozen Schema v1, fixture GeoJSON, raw and processed datasets
-- **`docs/`** — Methodology, attribution, Devpost assets
+- **`docs/`** — Methodology, attribution, and design documents
 - **`scripts/`** — One-off helpers for data downloads, schema validation, deployment
 - **`.github/`** — CI workflows and issue templates
 
@@ -60,8 +60,8 @@ The entire product is a linear pipeline, not four separate features:
 
 | Move | What It Does | Plain-Language Result |
 |------|-------------|----------------------|
-| **Ingest** | Pulls roadkill records from iNaturalist structured field query, joins OpenStreetMap road geometry, layers ESA WorldCover land cover and WDPA protected-area boundaries | A clean, citable dataset tied to road segments |
-| **Model** | Gradient-boosted model scores every road segment 0–100 based on land cover, protected-area proximity, species mix, and distance to water | A confidence score for each segment — explicitly low-confidence because training data is sparse (92 records nationwide) |
+| **Ingest** | Pulls roadkill records from iNaturalist structured field query, joins OpenStreetMap road geometry plus OSM forest and water layers via Overpass (ESA WorldCover + WDPA are the documented upgrade path) | A clean, citable dataset tied to road segments |
+| **Model** | Calibrated gradient-boosted model scores every road segment 0–100 on leakage-safe road-attribute features: road class, forest cover, distance to water, and neighbouring observation pressure | A confidence score for each segment — explicitly low-confidence because training data is sparse (92 records nationwide) |
 | **Rank** | Segments sorted 0–100; clicking a red segment opens a **recommendation card** — seasonal collision curves, species mix, and an explicit intervention type | A prioritized list: “Segment NH-766-KM12 scores 87/100; build a crossing + fence here.” |
 | **Act** | Recommendation card cites the evidence corridor (Bandipur/NH-766, Pune–Bengaluru, Assam elephant corridors) so forest departments can immediately budget and build | Decision-ready output: a ranked, justified intervention plan |
 
@@ -76,8 +76,8 @@ The entire product is a linear pipeline, not four separate features:
 | **Frontend** | React 18 + Vite + Tailwind CSS + MapLibre GL JS | Fastest scaffold-to-deploy; MapLibre is open-source, no billing surprise |
 | **Backend** | FastAPI + static GeoJSON tiles + Supabase free tier | Minimal backend; survives traffic spikes; real database in minutes |
 | **ML / Data** | Python, geopandas, SciPy KDE, scikit-learn GradientBoosting | Battle-tested spatial stack; handles messy tabular features |
-| **Hosting** | Vercel (frontend + API), GitHub (repo + video) | Live link from Day 1; judges can click before the video exists |
-| **Practices** | Frozen Schema v1, fixture-first UI, daily 15-min sync | Coordination protocol for a two-person, seven-day build |
+| **Hosting** | Vercel (frontend + API), GitHub (repo) | Always-live deployment; every push is reviewable |
+| **Practices** | Frozen Schema v1, fixture-first UI, weekly sync | Coordination protocol that scales beyond the founding team |
 
 ---
 
@@ -158,7 +158,7 @@ hack-the-habitat/
 ├── docs/
 │   ├── methodology.md
 │   ├── attribution.md
-│   ├── devpost.md
+│   ├── project-overview.md
 │   └── demo-script.md
 │
 ├── scripts/
@@ -186,7 +186,7 @@ hack-the-habitat/
 | Role | Primary Folders | Also Touches |
 |------|----------------|--------------|
 | **ML Engineer** | `ml-pipeline/`, `data/raw/`, `data/processed/`, `data/schema/`, `scripts/` | `docs/methodology.md`, `docs/attribution.md`, backend routers |
-| **Fullstack Dev** | `frontend/`, `backend/`, `data/fixtures/`, `scripts/` | `docs/devpost.md`, `docs/demo-script.md`, `.github/workflows/` |
+| **Fullstack Dev** | `frontend/`, `backend/`, `data/fixtures/`, `scripts/` | `docs/demo-script.md`, `.github/workflows/` |
 
 #### ML Engineer — Your Territory
 
@@ -229,14 +229,14 @@ You own the product. The map, the cards, the form, the API, and the deploy:
 - **`data/fixtures/`** — committed fixture GeoJSON for frontend dev before real data lands
 - **`scripts/validate_schema.py`** — run this on every fixture/model data commit
 - **`.github/workflows/ci.yml`** — CI for linting, schema validation, deploy preview
-- **`docs/devpost.md`** — Devpost writeup, demo script, screenshots
+- **`docs/project-overview.md`** — project writeup, demo script, screenshots
 
 **Your deliverables:**
-1. Day 1: React shell deployed to Vercel, map UI loading fixtures
-2. Day 2-3: recommendation cards, seasonality, species filters, report form skeleton
-3. Day 4: methodology and attribution pages written
-4. Day 5: FastAPI live, real predictions wired, sightings form on Supabase
-5. Day 6-7: polish, accessibility, mobile, demo video, Devpost entry
+1. Map UI loading fixtures and deployed to Vercel
+2. Recommendation cards, seasonality, species filters, report form
+3. Methodology and attribution pages
+4. FastAPI wired to real predictions, sightings form persisted
+5. Ongoing polish: accessibility, mobile, documentation
 
 ### Shared Responsibilities
 
@@ -339,20 +339,21 @@ jupyter notebook
 
 ---
 
-## Day-by-Day Milestones
+## Project Status & Roadmap
 
-| Day | Milestone | Definition of Done |
-|-----|-----------|-------------------|
-| **D1** (Aug 24) | **Evidence & Contract** | Honesty-ladder check completed; Schema v1 frozen; React shell deployed to Vercel |
-| **D2** (Aug 25) | **Parallel Tracks** | Feature engineering deepens; map UI runs fully on fixtures; live link behaves like a product |
-| **D3** (Aug 26) | **The Model** | KDE hotspot maps take shape; segment risk model training begins; frontend builds cards and seasonality calendar |
-| **D4** (Aug 27) | **Numbers That Convince** | Model frozen with evaluation stats; headline metric computed; demo path rehearsed on fixture data |
-| **D5** (Aug 28) | **Integration** | Real predictions behind Schema v1; FastAPI live; sightings form shipped; end-to-end click-through green |
-| **D6** (Aug 29) | **Polish** | Accessibility ≥ 90, mobile pass, loading/empty states; methodology and attribution pages written |
-| **D7** (Aug 30) | **Ship Ahead of the Gun** | Demo video recorded and edited; Devpost entry drafted; repo public |
-| **D8** (Aug 31) | **Submission** | Final review; submit before 10:15 AM IST |
+SafePassage is an ongoing open-source project, not a one-off prototype. The core
+pipeline — ingestion, risk scoring, hotspot ranking, and the intervention map — is
+live; work now focuses on growing data coverage and hardening the model.
 
-**Daily sync:** Every evening at 21:30, 15-minute standup.  
+| Area | Status | Next Steps |
+|------|--------|------------|
+| **Data ingestion** | Working (iNaturalist structured query + OSM via Overpass) | Broaden corridor coverage beyond the four pilot highways |
+| **Model** | v0.3, low-confidence by design (92 structured records vs. the 150-record honesty bar) | Collect more citizen-science reports; promote the predictive layer once the threshold is met |
+| **Backend** | FastAPI serving Schema v1 GeoJSON + sightings POST | Add record-level provenance and pagination |
+| **Frontend** | React + MapLibre map, dossier cards, honesty-ladder dashboard, dark & light themes | Mobile UX polish, offline PWA support |
+| **Community** | Contribution guide in place | Onboard field volunteers and NGO partners |
+
+**Weekly sync:** every week, 15-minute standup.
 **Iron rule:** Nobody changes the contract alone.
 
 ---
@@ -362,7 +363,7 @@ jupyter notebook
 1. **Schema v1 is the constitution.** Any change after Day 1 freeze requires both leads to agree in writing in the commit message.
 2. **Fixture-first development.** Frontend builds against committed fixture GeoJSON from hour one. ML pipeline outputs real data on Day 5.
 3. **Honesty ladder commits.** Every data-quality decision is documented in `docs/methodology.md` with the record count, spatial coverage, and confidence designation.
-4. **Cut list is a treaty.** User accounts, native mobile apps, multi-country expansion, and real-time streaming are out of scope for the seven-day build.
+4. **Cut list is a treaty.** User accounts, native mobile apps, multi-country expansion, and real-time streaming are out of scope for the current release.
 5. **Zero paid services.** Everything runs on free tiers and open data. No API keys, no billing surprises.
 
 ---
@@ -394,17 +395,17 @@ This project uses open data and open-source software. Full attribution is mainta
 
 ---
 
-## Judging Strategy
+## Why This Project
 
-SafePassage is designed to score well across all Hack the Habitat rubric criteria:
+SafePassage is built around five commitments that guide every design decision:
 
-| Criterion | Weight | Our Answer |
-|-----------|--------|-----------|
-| **Environmental Impact** | 30% | Ranked intervention list converts death data into prevented deaths — anchored on Bandipur/NH-766 |
-| **Use of Technology** | 25% | Real spatial statistics + gradient boosting on messy citizen-science data |
-| **Design & Usability** | 20% | Ten-second demo path; accessibility treated as a requirement |
-| **Execution** | 15% | Live link from Day 1; integration scheduled as a non-event; buffer day before deadline |
-| **Theme Alignment** | 10% | Output is protection — every recommendation maps to a physical, fundable, life-saving measure |
+| Commitment | What It Means in Practice |
+|-----------|---------------------------|
+| **Environmental Impact** | Ranked intervention list converts death data into prevented deaths — anchored on Bandipur/NH-766 |
+| **Use of Technology** | Real spatial statistics + gradient boosting on messy citizen-science data |
+| **Design & Usability** | A ten-second understanding path; accessibility treated as a requirement |
+| **Sustained Execution** | Deployed from the start; integration treated as a non-event, not a scramble |
+| **Output as Protection** | Every recommendation maps to a physical, fundable, life-saving measure |
 
 ---
 
@@ -412,9 +413,9 @@ SafePassage is designed to score well across all Hack the Habitat rubric criteri
 
 The night-traffic ban on NH-766 through Bandipur Tiger Reserve — upheld by the Supreme Court in 2019 — ignited a running Kerala–Karnataka dispute: traders lose seven night-hours of highway, conservationists cannot prove which stretches actually kill. Both sides argue blind.
 
-SafePassage outputs the evidence layer that debate is missing, and gives our demo a story judges already know.
+SafePassage outputs the evidence layer that debate is missing — for policymakers, researchers, and citizens alike.
 
 ---
 
-*Prepared by the SafePassage team — two students, one contract, seven days, and a map that tells the truth.*  
-**v1.0 · Aug 23, 2026**
+*Maintained by the SafePassage team — open data, one frozen contract, and a map that tells the truth.*  
+**An ongoing open-source project**

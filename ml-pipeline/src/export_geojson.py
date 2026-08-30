@@ -2,12 +2,16 @@
 
 Exports model outputs as Schema v1-compliant GeoJSON files
 for the frontend and backend to consume.
+
+This module handles type coercion (numpy/pandas → JSON-safe Python),
+geometry conversion, and schema validation to ensure the frozen
+contract is never violated.
 """
 from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Dict
+from typing import Dict, List
 
 import geopandas as gpd
 import jsonschema
@@ -89,14 +93,23 @@ def validate_feature(feature: Dict, schema: Dict) -> None:
 
 
 def validate_geojson(geojson_path: Path, schema_path: Path) -> Dict:
-    """Validate a GeoJSON file against Schema v1 and return results."""
+    """Validate a GeoJSON file against Schema v1 and return results.
+
+    Returns a dictionary with:
+    - path: the validated file path
+    - status: "valid", "invalid", or "empty"
+    - errors: list of validation errors (empty if valid)
+    - feature_count: number of features in the file
+    - warnings: list of non-fatal warnings (e.g., low confidence)
+    """
     schema = load_schema(schema_path)
     gdf = gpd.read_file(geojson_path)
 
     if gdf.empty:
-        return {"path": str(geojson_path), "status": "empty", "errors": [], "feature_count": 0}
+        return {"path": str(geojson_path), "status": "empty", "errors": [], "warnings": [], "feature_count": 0}
 
     errors = []
+    warnings = []
     for idx, row in gdf.iterrows():
         properties = {k: _to_native(row[k]) for k in row.keys() if k != "geometry"}
         feature = {
@@ -106,11 +119,25 @@ def validate_geojson(geojson_path: Path, schema_path: Path) -> Dict:
         }
         try:
             validate_feature(feature, schema)
+            # Check for non-fatal warnings
+            conf = properties.get("confidence", 1.0)
+            if conf < 0.5:
+                warnings.append({
+                    "feature_index": int(idx),
+                    "feature_id": properties.get("hotspot_id") or properties.get("segment_id"),
+                    "warning": f"Low confidence: {conf:.2f} (< 0.5 threshold)",
+                })
         except jsonschema.ValidationError as exc:
             errors.append({"feature_index": int(idx), "error": str(exc)})
 
     status = "valid" if not errors else "invalid"
-    return {"path": str(geojson_path), "status": status, "errors": errors, "feature_count": int(len(gdf))}
+    return {
+        "path": str(geojson_path),
+        "status": status,
+        "errors": errors,
+        "warnings": warnings,
+        "feature_count": int(len(gdf)),
+    }
 
 
 def _write_schema_geojson(df: gpd.GeoDataFrame, output_path: Path) -> None:
@@ -157,7 +184,14 @@ def export_all(
     output_dir: Path,
     schema_path: Path,
 ) -> Dict:
-    """Export both hotspots and segments, run validation."""
+    """Export both hotspots and segments, run validation.
+
+    Returns a dictionary with:
+    - hotspots: validation result for hotspots layer
+    - segments: validation result for segments layer
+    - paths: output file paths
+    - summary: overall validation summary
+    """
     output_dir.mkdir(parents=True, exist_ok=True)
 
     hotspots_path = output_dir / "hotspots.geojson"
@@ -166,9 +200,20 @@ def export_all(
     hotspots_result = export_hotspots(hotspots, hotspots_path, schema_path)
     segments_result = export_segments(segments, segments_path, schema_path)
 
+    # Overall summary
+    total_errors = len(hotspots_result.get("errors", [])) + len(segments_result.get("errors", []))
+    total_warnings = len(hotspots_result.get("warnings", [])) + len(segments_result.get("warnings", []))
+
     return {
         "hotspots": hotspots_result,
         "segments": segments_result,
         "hotspots_path": str(hotspots_path),
         "segments_path": str(segments_path),
+        "summary": {
+            "status": "valid" if total_errors == 0 else "invalid",
+            "total_errors": total_errors,
+            "total_warnings": total_warnings,
+            "hotspot_count": hotspots_result.get("feature_count", 0),
+            "segment_count": segments_result.get("feature_count", 0),
+        },
     }

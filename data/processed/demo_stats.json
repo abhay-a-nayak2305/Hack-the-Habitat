@@ -1,10 +1,32 @@
 {
-  "total_observations": 0,
-  "positive_segments": 0,
-  "auc": 0.5,
-  "top5_capture": 0.0,
-  "model_version": "v0.1",
+  "total_observations": 28,
+  "total_structured_observations": 28,
+  "segment_count": 45,
+  "positive_segments": 18,
+  "positive_rate": 0.4,
+  "avg_risk_score": 0.0,
+  "high_risk_segments": 0,
+  "auc": 0.8429,
+  "top5_capture": 0.2,
+  "calibration_error": 0.2006,
+  "calibrated": true,
+  "feature_names": [
+    "road_class_score",
+    "road_length_km",
+    "forest_share",
+    "water_distance_m",
+    "neighbor_density"
+  ],
+  "model_version": "v0.3",
   "confidence_tier": "low",
-  "status": "demo_skipped_no_segments",
-  "notes": "Model trained on sparse citizen-science data. Predictive layer is secondary to the evidence layer. No risk scores are extrapolated into zero-coverage areas."
+  "status": "trained",
+  "caveat": "All metrics computed on sparse citizen-science data (~92 records). Treat as directional, not statistically definitive. The predictive layer is secondary to the evidence layer.",
+  "notes": "Model trained on sparse citizen-science data. Predictive layer is secondary to the evidence layer. No risk scores are extrapolated into zero-coverage areas.",
+  "honesty_ladder": {
+    "structured_record_threshold": 150,
+    "structured_records_collected": 28,
+    "status": "below_threshold",
+    "consequence": "Predictive hotspot model demoted to secondary, low-confidence layer. Evidence layer (descriptive collision corridors) is the headline feature.",
+    "progress_pct": 19
+  }
 }
