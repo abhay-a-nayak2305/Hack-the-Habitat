@@ -102,13 +102,11 @@ export default function Hero({ onReportClick }) {
 
         {/* Subhead */}
         <p
-          className="mt-7 max-w-2xl text-[15px] leading-[1.7] text-bone-dim animate-fade-up"
+          className="mt-7 max-w-xl text-[15px] leading-[1.7] text-bone-dim animate-fade-up"
           style={{ animationDelay: "80ms" }}
         >
-          The Supreme Court's night-traffic ban on NH-766 through Bandipur Tiger Reserve was
-          argued blind — neither side could prove which stretches actually kill. SafePassage
-          turns scattered citizen-science roadkill reports into a ranked, fundable list of
-          crossings, fences, and speed limits for India's highways.
+          Scattered citizen-science roadkill reports, transformed into a ranked, fundable
+          list of crossings, fences, and speed limits for India's highways.
         </p>
 
         {/* Fact strip — animated counters */}

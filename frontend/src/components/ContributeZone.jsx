@@ -8,8 +8,8 @@ const FEATURES = [
     description:
       "Submit roadkill observations from your highway. Every record counts — no account required.",
     accent: "ember",
-    href: null,
     action: "report",
+    tag: "Most impactful",
   },
   {
     icon: Compass,
@@ -19,6 +19,7 @@ const FEATURES = [
     accent: "amber",
     href: "zone-map",
     action: "explore",
+    tag: null,
   },
   {
     icon: Book,
@@ -28,6 +29,7 @@ const FEATURES = [
     accent: "leaf",
     href: "zone-methodology",
     action: "methodology",
+    tag: null,
   },
 ];
 
@@ -184,11 +186,24 @@ function FeatureCard({ feature, visible, delay = 0, onClick }) {
       className={`stat-reveal ${visible ? "visible" : ""} group surface rounded-panel px-6 py-7 text-left transition-all duration-300 ${a.hoverBorder} ${a.hoverShadow} hover:-translate-y-1`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <span
-        className={`grid h-10 w-10 place-items-center rounded-lg border ${a.iconBorder} ${a.iconBg} ${a.iconText} transition-transform duration-300 group-hover:scale-110`}
-      >
-        <Icon size={18} />
-      </span>
+      <div className="flex items-start justify-between">
+        <span
+          className={`grid h-10 w-10 place-items-center rounded-lg border ${a.iconBorder} ${a.iconBg} ${a.iconText} transition-transform duration-300 group-hover:scale-110`}
+        >
+          <Icon size={18} />
+        </span>
+        {feature.tag && (
+          <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-[9px] font-medium uppercase tracking-wider ${
+            feature.accent === "ember"
+              ? "border border-ember/20 bg-ember/[0.08] text-ember"
+              : feature.accent === "amber"
+              ? "border border-amber/20 bg-amber/[0.08] text-amber"
+              : "border border-leaf/20 bg-leaf/[0.08] text-leaf"
+          }`}>
+            {feature.tag}
+          </span>
+        )}
+      </div>
 
       <h3 className="mt-4 font-display text-display-sm text-bone transition-colors group-hover:text-bone-50">
         {feature.title}

@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { Paw, Plus, Menu, X, Sun, Moon } from "./icons";
 
 const NAV = [
+  { id: "zone-hero", label: "Home" },
   { id: "zone-problem", label: "The Problem" },
   { id: "zone-map", label: "System" },
   { id: "zone-methodology", label: "Methodology" },
@@ -11,15 +12,48 @@ const NAV = [
 
 export default function Header({ onReportClick, live = null }) {
   const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("zone-hero");
   const { theme, toggleTheme } = useTheme();
 
-  const go = (id) => {
+  const go = useCallback((id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setOpen(false);
-  };
+  }, []);
+
+  // Track which section is currently in view
+  useEffect(() => {
+    const sectionIds = NAV.map((n) => n.id);
+    const observers = [];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveSection(id);
+          }
+        },
+        { threshold: 0.3, rootMargin: "-80px 0px -40% 0px" }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
 
   return (
     <header className="relative z-40 border-b border-rule bg-surface/85 backdrop-blur-xl">
+      {/* Skip to content link for keyboard users */}
+      <a
+        href="#zone-map"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-lg focus:bg-amber focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-canopy-950 focus:shadow-float"
+      >
+        Skip to main content
+      </a>
+
       <div className="mx-auto flex h-14 max-w-[1600px] items-center justify-between gap-4 px-4 sm:px-6">
         <button
           onClick={() => go("zone-hero")}
@@ -44,9 +78,17 @@ export default function Header({ onReportClick, live = null }) {
             <button
               key={n.id}
               onClick={() => go(n.id)}
-              className="relative rounded-lg px-3 py-1.5 text-sm font-medium text-bone-dim transition-colors hover:text-bone"
+              className={`relative rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
+                activeSection === n.id
+                  ? "text-bone bg-surface-raised"
+                  : "text-bone-dim hover:text-bone"
+              }`}
+              aria-current={activeSection === n.id ? "true" : undefined}
             >
               {n.label}
+              {activeSection === n.id && (
+                <span className="absolute bottom-0 left-3 right-3 h-0.5 rounded-full bg-amber" />
+              )}
             </button>
           ))}
         </nav>
@@ -113,7 +155,12 @@ export default function Header({ onReportClick, live = null }) {
               <button
                 key={n.id}
                 onClick={() => go(n.id)}
-                className="rounded-lg px-3 py-2 text-left text-sm text-bone-dim"
+                className={`rounded-lg px-3 py-2 text-left text-sm transition-colors ${
+                  activeSection === n.id
+                    ? "bg-surface-raised text-bone font-medium"
+                    : "text-bone-dim hover:text-bone"
+                }`}
+                aria-current={activeSection === n.id ? "true" : undefined}
               >
                 {n.label}
               </button>

@@ -97,6 +97,7 @@ export default {
         "fade-in": "fadeIn 0.6s cubic-bezier(0.16,1,0.3,1) both",
         "fade-up": "fadeUp 0.7s cubic-bezier(0.16,1,0.3,1) both",
         "slide-in-right": "slideInRight 0.5s cubic-bezier(0.16,1,0.3,1) both",
+        "slide-up": "slideUp 0.35s cubic-bezier(0.16,1,0.3,1) both",
         "scale-in": "scaleIn 0.4s cubic-bezier(0.16,1,0.3,1) both",
         "pulse-glow": "pulseGlow 3s ease-in-out infinite",
         "contour-drift": "contourDrift 20s linear infinite",
@@ -114,6 +115,10 @@ export default {
         slideInRight: {
           "0%": { opacity: "0", transform: "translateX(32px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0)" },
         },
         scaleIn: {
           "0%": { opacity: "0", transform: "scale(0.95)" },

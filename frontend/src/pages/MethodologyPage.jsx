@@ -147,7 +147,31 @@ export default function MethodologyPage() {
         {/* The four moves */}
         <section className="mt-12 animate-fade-up" style={{ animationDelay: "220ms" }}>
           <h2 className="font-display text-display-sm text-bone">The four moves</h2>
-          <div className="mt-4 space-y-3">
+
+          {/* Visual pipeline diagram */}
+          <div className="mt-6 hidden sm:flex items-center justify-center gap-0">
+            {STEPS.map((s, i) => (
+              <div key={s.name} className="flex items-center">
+                <div className="flex flex-col items-center">
+                  <span className="grid h-12 w-12 place-items-center rounded-xl border border-amber/25 bg-amber/[0.08] text-amber transition-colors group-hover:border-amber/40 group-hover:bg-amber/[0.12]">
+                    {s.icon}
+                  </span>
+                  <span className="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-bone-faint">{s.name}</span>
+                </div>
+                {i < STEPS.length - 1 && (
+                  <div className="mx-2 flex items-center">
+                    <div className="h-px w-12 bg-gradient-to-r from-amber/40 to-amber/20" />
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" className="text-amber/40 shrink-0">
+                      <path d="M0 4h10M8 1l3 3-3 3" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Detailed steps (card list) */}
+          <div className="mt-6 space-y-3">
             {STEPS.map((s, i) => (
               <div key={s.name} className="surface grain group flex gap-4 rounded-panel p-5 transition-all duration-300 hover:border-amber/20 hover:shadow-glow-amber">
                 <div className="flex flex-col items-center">

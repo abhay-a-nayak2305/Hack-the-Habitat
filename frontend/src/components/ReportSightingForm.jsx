@@ -9,6 +9,7 @@ export default function ReportSightingForm({ open, onClose }) {
   const [form, setForm] = useState(initial);
   const [status, setStatus] = useState("idle");
   const [errors, setErrors] = useState({});
+  const [geoError, setGeoError] = useState(null);
 
   if (!open) return null;
 
@@ -18,10 +19,37 @@ export default function ReportSightingForm({ open, onClose }) {
   };
 
   const useMyLocation = () => {
-    if (!navigator.geolocation) return;
-    navigator.geolocation.getCurrentPosition((pos) => {
-      setForm({ ...form, latitude: pos.coords.latitude.toFixed(5), longitude: pos.coords.longitude.toFixed(5) });
-    });
+    if (!navigator.geolocation) {
+      setGeoError("Geolocation is not supported by your browser.");
+      return;
+    }
+    setGeoError(null);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setForm({
+          ...form,
+          latitude: pos.coords.latitude.toFixed(5),
+          longitude: pos.coords.longitude.toFixed(5),
+        });
+      },
+      (err) => {
+        switch (err.code) {
+          case err.PERMISSION_DENIED:
+            setGeoError("Location access denied. You can enter coordinates manually below.");
+            break;
+          case err.POSITION_UNAVAILABLE:
+            setGeoError("Location information unavailable. Enter coordinates manually.");
+            break;
+          case err.TIMEOUT:
+            setGeoError("Location request timed out. Try again or enter coordinates.");
+            break;
+          default:
+            setGeoError("Could not get your location. Enter coordinates manually.");
+            break;
+        }
+      },
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
+    );
   };
 
   const validate = () => {
@@ -53,6 +81,7 @@ export default function ReportSightingForm({ open, onClose }) {
       setForm(initial);
       setStatus("idle");
       setErrors({});
+      setGeoError(null);
     }, 300);
   };
 
@@ -97,6 +126,9 @@ export default function ReportSightingForm({ open, onClose }) {
               <Locate size={13} />
               Use my current location
             </button>
+            {geoError && (
+              <p role="alert" className="mt-1.5 text-[11px] text-amber/80">{geoError}</p>
+            )}
 
             <div className="mt-3">
               <Field label="Species (common name)" required value={form.species} onChange={update("species")} placeholder="Chital, Indian peafowl…" error={errors.species} />

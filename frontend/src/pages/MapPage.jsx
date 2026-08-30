@@ -135,11 +135,13 @@ export default function MapPage({ onLiveChange, selectedId: externalSelectedId, 
                   <span className="h-2 w-2 animate-pulse rounded-full bg-amber" />
                   Loading…
                 </span>
+              ) : features.length === 0 ? (
+                <span className="text-amber">No clusters match filters</span>
               ) : (
                 `${features.length} clusters · source ${source === "api" ? "live" : "fixtures"}`
               )}
             </span>
-            {!isLoading && features[0] && (
+            {!isLoading && features.length > 0 && features[0] && (
               <button
                 onClick={() => setSelectedId(features[0].properties.hotspot_id)}
                 className="btn-primary !px-3 !py-1 text-xs"
@@ -147,6 +149,30 @@ export default function MapPage({ onLiveChange, selectedId: externalSelectedId, 
                 Top hotspot
               </button>
             )}
+          </div>
+        </div>
+      )}
+
+      {/* Empty state overlay — when filters return no results */}
+      {!isLoading && features.length === 0 && (
+        <div className="absolute inset-0 z-10 flex items-center justify-center p-4">
+          <div className="surface rounded-panel p-6 text-center max-w-sm animate-fade-in">
+            <div className="mx-auto grid h-12 w-12 place-items-center rounded-xl border border-amber/20 bg-amber/[0.08] text-amber">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M15 9l-6 6M9 9l6 6" />
+              </svg>
+            </div>
+            <h3 className="mt-3 font-display text-[15px] font-semibold text-bone">No hotspots found</h3>
+            <p className="mt-1.5 text-xs leading-relaxed text-bone-dim">
+              No hotspot clusters match your current filters. Try adjusting the risk slider or changing the species/corridor filter.
+            </p>
+            <button
+              onClick={clearFilters}
+              className="btn-ghost mt-4 !px-4 !py-1.5 text-xs"
+            >
+              Reset filters
+            </button>
           </div>
         </div>
       )}

@@ -82,14 +82,14 @@ function ModelPerformance({ metrics, inView }) {
   return (
     <div className="border-b border-rule pb-5">
       <h3 className="field-label">Model Performance</h3>
-      {/* AUC visual */}
-      <div className="mt-4 flex items-center gap-4">
-        <div className="relative h-16 w-16 shrink-0">
+      {/* AUC visual — larger ring for hero metric */}
+      <div className="mt-4 flex items-center gap-5">
+        <div className="relative h-[88px] w-[88px] shrink-0">
           <svg viewBox="0 0 36 36" className="h-full w-full -rotate-90">
-            <circle cx="18" cy="18" r="15.5" fill="none" stroke="var(--rule)" strokeWidth="3" />
+            <circle cx="18" cy="18" r="15.5" fill="none" stroke="var(--rule)" strokeWidth="2.5" />
             <circle
               cx="18" cy="18" r="15.5" fill="none"
-              stroke="var(--leaf)" strokeWidth="3" strokeLinecap="round"
+              stroke="var(--leaf)" strokeWidth="2.5" strokeLinecap="round"
               strokeDasharray={`${aucPct} ${100 - aucPct}`}
               style={{
                 transition: inView ? "stroke-dasharray 0.9s cubic-bezier(0.2,0.7,0.2,1)" : "none",
@@ -97,14 +97,14 @@ function ModelPerformance({ metrics, inView }) {
             />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="font-display text-[13px] font-bold leading-none text-bone">
+            <span className="font-display text-[15px] font-bold leading-none text-bone">
               <AnimatedNumber value={aucPct} inView={inView} suffix="%" />
             </span>
           </div>
         </div>
         <div>
-          <div className="text-[13px] font-semibold text-bone">AUC-ROC</div>
-          <div className="mt-0.5 text-xs text-bone-dim">Binary classification accuracy</div>
+          <div className="text-[14px] font-semibold text-bone">AUC-ROC</div>
+          <div className="mt-1 text-xs text-bone-dim">Binary classification accuracy</div>
         </div>
       </div>
       {/* Supporting metrics */}

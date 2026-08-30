@@ -333,13 +333,13 @@ export default function Map({ hotspots, segments, selectedId, onSelectHotspot, l
       </button>
 
       {/* Risk legend — bottom center */}
-      <div className="pointer-events-none absolute bottom-4 left-1/2 z-10 hidden -translate-x-1/2 md:block">
-        <div className="flex items-center gap-3.5 rounded-full border border-rule bg-surface/80 px-5 py-2 backdrop-blur-xl">
+      <div className="pointer-events-none absolute bottom-4 left-1/2 z-10 -translate-x-1/2 sm:bottom-4 md:block" role="img" aria-label="Risk score legend: green (0) is low risk, amber (50) is medium risk, red (100) is high risk">
+        <div className="flex items-center gap-3.5 rounded-full border border-rule bg-surface/80 px-4 py-1.5 backdrop-blur-xl sm:px-5 sm:py-2">
           <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-bone-faint">Risk</span>
           <span className="flex items-center gap-1.5 text-[10px] text-bone-dim">
             <span className="h-2 w-2 rounded-full bg-leaf shadow-glow-leaf" /> 0
           </span>
-          <span className="h-[3px] w-24 rounded-full opacity-70" style={{ background: "linear-gradient(to right, #3D9B6F, #E5A84B 50%, #E04D28)" }} />
+          <span className="h-[3px] w-16 rounded-full opacity-70 sm:w-24" style={{ background: "linear-gradient(to right, #3D9B6F, #E5A84B 50%, #E04D28)" }} />
           <span className="flex items-center gap-1.5 text-[10px] text-bone-dim">
             100 <span className="h-2 w-2 rounded-full bg-ember shadow-glow-ember" />
           </span>
