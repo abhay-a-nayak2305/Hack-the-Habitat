@@ -170,15 +170,20 @@ export default function DossierPanel({ hotspot, onClose, hideClose = false }) {
 
         {/* Evidence source */}
         <section className="border-t border-rule px-5 py-3">
-          <a
-            href={`https://www.inaturalist.org/observations?place_id=6737&taxon_id=47170&lat=${lat}&lng=${lon}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(
+                `https://www.inaturalist.org/observations?place_id=6737&taxon_id=47170&lat=${lat}&lng=${lon}`,
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
             className="flex items-center gap-1.5 text-[11px] text-bone-faint hover:text-amber transition-colors"
           >
             <External size={11} />
             View raw observations on iNaturalist
-          </a>
+          </button>
         </section>
 
         {/* Footer actions */}
@@ -187,16 +192,20 @@ export default function DossierPanel({ hotspot, onClose, hideClose = false }) {
             {copied ? <Check size={13} className="text-leaf-bright" /> : <Copy size={13} />}
             {copied ? "Copied" : "Copy dossier"}
           </button>
-          <a
-            href={`https://www.inaturalist.org/observations?place_id=6737&taxon_id=47170&lat=${lat}&lng=${lon}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(
+                `https://www.inaturalist.org/observations?place_id=6737&taxon_id=47170&lat=${lat}&lng=${lon}`,
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
             className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-rule px-3 py-2 text-xs text-bone-dim transition-colors hover:border-amber/40 hover:text-bone"
           >
             <External size={13} />
             Evidence
-          </a>
+          </button>
         </div>
       </div>
     </div>
