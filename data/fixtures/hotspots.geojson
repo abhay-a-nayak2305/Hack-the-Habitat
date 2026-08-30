@@ -36,9 +36,11 @@
           11
         ],
         "observation_count": 14,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-753BE",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Grey Mongoose, Striped Hyaena, Common Palm Squirrel",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -79,9 +81,11 @@
           5
         ],
         "observation_count": 37,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-353K",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Greater Bandicoot Rat, Indian Toad, Dumeril's Black-headed Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -121,9 +125,11 @@
           2
         ],
         "observation_count": 23,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-353K",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal, Golden Jackal, Indian Rock Python",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -164,9 +170,11 @@
           13
         ],
         "observation_count": 122,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-243",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Western Russel\u2019s Viper, Chequered Keelback, Greater Coucal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -211,6 +219,8 @@
         "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal, Indian Crested Porcupine, Unidentified (Reptile Sp)",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -251,9 +261,11 @@
           24
         ],
         "observation_count": 130,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-243",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Cobra, Nilgai, Indian Hare",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -294,9 +306,11 @@
           6
         ],
         "observation_count": 49,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-353K",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Golden Jackal, Indian Rock Python, Common Palm Squirrel",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -336,9 +350,11 @@
           4
         ],
         "observation_count": 52,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-7",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Blackbuck, Changeable Lizard, Greater Coucal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -379,9 +395,11 @@
           10
         ],
         "observation_count": 78,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-243",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Nightjar, Indian Hare",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -421,9 +439,11 @@
           8
         ],
         "observation_count": 39,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-200",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Small Indian Civet, Wild Boar, Chequered Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -463,9 +483,11 @@
           2
         ],
         "observation_count": 18,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-242",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Kukri Snake, Western Russel\u2019s Viper, Nilgai",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -516,8 +538,10 @@
         "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "Tamil Nadu",
+        "vernacular_name": "Toad, Skink, Common palm civet",
         "sources": [
-          "gbif_anamalai_hills_/_valparai_plateau"
+          "gbif_anamalai_hills"
         ]
       }
     },
@@ -566,8 +590,10 @@
         "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "Tamil Nadu",
+        "vernacular_name": "Frog, Snail",
         "sources": [
-          "gbif_anamalai_hills_/_valparai_plateau"
+          "gbif_anamalai_hills"
         ]
       }
     },
@@ -616,8 +642,10 @@
         "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "Tamil Nadu",
+        "vernacular_name": "Mouse, Birds, Frog",
         "sources": [
-          "gbif_anamalai_hills_/_valparai_plateau"
+          "gbif_anamalai_hills"
         ]
       }
     },
@@ -655,9 +683,11 @@
           1
         ],
         "observation_count": 13,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-353K",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Dumeril's Black-headed Snake, Western Russel\u2019s Viper, Pondich\u00e9ry Fan Throated Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -697,9 +727,11 @@
           1
         ],
         "observation_count": 12,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-241",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Blackbuck, Rose-ringed Parakeet, Greater Coucal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -740,6 +772,8 @@
         "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Krait, Common Kukri Snake, Trinket Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -782,6 +816,8 @@
         "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Large Flying-fox, Common Krait, Indian Bullfrog",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -822,6 +858,8 @@
         "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Cobra, Common Kukri Snake, Trinket Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -865,6 +903,8 @@
         "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Asian Common Toad, Plain Prinia, Chequered Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -904,9 +944,11 @@
           0
         ],
         "observation_count": 9,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-237",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Northern Plains Gray Langur, Indian Cobra, Greater Coucal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -948,6 +990,8 @@
         "nearest_highway": "unknown",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Western Russel\u2019s Viper, Indian Rock Python",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -987,9 +1031,11 @@
           2
         ],
         "observation_count": 7,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-548C",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Red-vented Bulbul, Asian Chameleon, Trinket Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1029,9 +1075,11 @@
           0
         ],
         "observation_count": 6,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-6",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Rat Snake, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1070,9 +1118,11 @@
           0
         ],
         "observation_count": 6,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-31",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Cobra, Golden Jackal, Indian Gamma Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1111,9 +1161,11 @@
           0
         ],
         "observation_count": 6,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-6",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Roller, Indian Rock Python, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1154,6 +1206,8 @@
         "nearest_highway": "unknown",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Kukri Snake, Common Krait, Indian Rock Python",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1196,6 +1250,8 @@
         "nearest_highway": "unknown",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Golden Jackal, Changeable Lizard, Asian Green Bee-eater",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1237,6 +1293,8 @@
         "nearest_highway": "unknown",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Western Russel\u2019s Viper, Greater Coucal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1278,6 +1336,8 @@
         "nearest_highway": "unknown",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Changeable Lizard, Trinket Snake, Greater Coucal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1319,6 +1379,8 @@
         "nearest_highway": "unknown",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Egg-Eater, Bengal Monitor Lizard, Red-vented Bulbul",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1360,6 +1422,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Red-vented Bulbul, Changeable Lizard, Trinket Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1401,6 +1465,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Toad, Chequered Keelback, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1442,6 +1508,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Green Keelback, Common Krait, Greater Coucal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1480,9 +1548,11 @@
           1
         ],
         "observation_count": 3,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-194",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Great White Egret, Common Palm Squirrel, Jungle Cat",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1524,6 +1594,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Flapshell Turtle, Indian Gamma Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1565,6 +1637,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Changeable Lizard, House Rat",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1606,6 +1680,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Red-vented Bulbul, Indian Gamma Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1647,6 +1723,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Changeable Lizard, House Rat",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1687,6 +1765,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Wolf Snake, Western Russel\u2019s Viper, Common Krait",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1725,9 +1805,11 @@
           0
         ],
         "observation_count": 2,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-6",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Barn-owl, Common Palm Squirrel",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1768,6 +1850,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1808,6 +1892,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Cobra, Green Keelback, Trinket Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1848,6 +1934,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Jungle Cat",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1885,9 +1973,11 @@
           2
         ],
         "observation_count": 2,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-160H",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Grey Mongoose, Common Palm Squirrel",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1925,9 +2015,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-753BE",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1968,6 +2060,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Long-nosed Tree Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2008,6 +2102,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "White-breasted Waterhen",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2048,6 +2144,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Kukri Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2088,6 +2186,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2125,9 +2225,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-119",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2168,6 +2270,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Buff Striped Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2208,6 +2312,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "White-throated Kingfisher",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2248,6 +2354,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Buff Striped Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2288,6 +2396,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Kukri Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2325,9 +2435,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-101",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Coral Red Kukri Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2368,6 +2480,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Chequered Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2408,6 +2522,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Krait",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2448,6 +2564,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Buff Striped Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2485,9 +2603,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-6",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Shikra",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2528,6 +2648,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Unidentified (Bird sp)",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2568,6 +2690,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Cobra",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2605,9 +2729,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-261",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Western Russel\u2019s Viper",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2645,9 +2771,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-26",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Kukri Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2688,6 +2816,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Chequered Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2725,9 +2855,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-33",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Rock Python",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2768,6 +2900,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Chequered Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2808,6 +2942,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2845,9 +2981,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-172",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Chequered Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2888,6 +3026,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2928,6 +3068,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -2968,6 +3110,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Bengal Monitor Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3008,6 +3152,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Small Indian Civet",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3048,6 +3194,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Chequered Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3088,6 +3236,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Krait",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3125,9 +3275,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-52",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Long-nosed Tree Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3168,6 +3320,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Western Russel\u2019s Viper",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3205,9 +3359,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-953",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Grey Mongoose",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3248,6 +3404,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Banded Racer",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3288,6 +3446,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Crested Porcupine",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3328,6 +3488,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Kukri Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3368,6 +3530,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3408,6 +3572,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Palm Civet",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3448,6 +3614,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Green Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3488,6 +3656,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3528,6 +3698,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Bullfrog",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3568,6 +3740,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3605,9 +3779,11 @@
           1
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-161A",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Greater Coucal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3645,9 +3821,11 @@
           1
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-753BB",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Jungle Cat",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3688,6 +3866,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Small Indian Civet",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3725,9 +3905,11 @@
           1
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-353C",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Palm Civet",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3768,6 +3950,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3808,6 +3992,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Chequered Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3848,6 +4034,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Red Sand Boa",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3885,9 +4073,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "NH-548C",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Blackbuck",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3928,6 +4118,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Elliot's Earth Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -3968,6 +4160,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Common Babbler",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4008,6 +4202,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Chequered Keelback",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4048,6 +4244,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Blackbuck",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4088,6 +4286,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Blackbuck",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4128,6 +4328,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Trinket Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4165,9 +4367,11 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SH-6",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Stout Sand Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4208,6 +4412,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Grey Mongoose",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4248,6 +4454,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Greater Coucal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4288,6 +4496,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Red-vented Bulbul",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4328,6 +4538,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Red Sand Boa",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4368,6 +4580,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4408,6 +4622,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Indian Nightjar",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -4448,6 +4664,8 @@
         "nearest_highway": "unknown",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
+        "state": "",
+        "vernacular_name": "Small Indian Civet",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
