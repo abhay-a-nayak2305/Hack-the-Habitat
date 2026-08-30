@@ -174,7 +174,7 @@ export default function DossierPanel({ hotspot, onClose, hideClose = false }) {
             onClick={(e) => {
               e.stopPropagation();
               window.open(
-                `https://www.inaturalist.org/observations?place_id=6737&taxon_id=47170&lat=${lat}&lng=${lon}`,
+                `https://www.inaturalist.org/observations?lat=${lat}&lng=${lon}&radius=10&order=desc&order_by=observed_on`,
                 "_blank",
                 "noopener,noreferrer"
               );
@@ -196,7 +196,7 @@ export default function DossierPanel({ hotspot, onClose, hideClose = false }) {
             onClick={(e) => {
               e.stopPropagation();
               window.open(
-                `https://www.inaturalist.org/observations?place_id=6737&taxon_id=47170&lat=${lat}&lng=${lon}`,
+                `https://www.inaturalist.org/observations?lat=${lat}&lng=${lon}&radius=10&order=desc&order_by=observed_on`,
                 "_blank",
                 "noopener,noreferrer"
               );
