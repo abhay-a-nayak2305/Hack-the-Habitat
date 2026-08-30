@@ -15,6 +15,9 @@ export default function Hero({ onReportClick }) {
   const highwayNames = stats?.hotspots_by_highway
     ? Object.keys(stats.hotspots_by_highway).join(" · ")
     : null;
+  const displayHighwayNames = highwayNames
+    ? highwayNames.split(" · ").slice(0, 3).join(" · ")
+    : null;
 
   // Check if above honesty ladder threshold
   const honestyLadder = stats?.honesty_ladder;
@@ -135,7 +138,7 @@ export default function Hero({ onReportClick }) {
           <Fact
             value={corridors}
             suffix="corridors ranked"
-            label={highwayNames || "highway corridors"}
+            label={displayHighwayNames || "highway corridors"}
             accent="ember"
             animate={heroInView}
           />
