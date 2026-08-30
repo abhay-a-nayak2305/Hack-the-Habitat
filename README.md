@@ -160,7 +160,6 @@ hack-the-habitat/
 | `GET` | `/api/stats/summary` | Headline metrics for methodology page |
 | `GET` | `/api/stats/dashboard` | Full dashboard data (model metrics, interventions, species) |
 | `GET` | `/api/stats/honesty-ladder` | Honesty ladder status |
-| `GET` | `/api/stats/keep-alive` | Keep-alive ping to prevent Render free-tier cold start |
 | `POST` | `/api/sightings` | Submit a citizen-science sighting |
 | `GET` | `/api/health` | Health check |
 
