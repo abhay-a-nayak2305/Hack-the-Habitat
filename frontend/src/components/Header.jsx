@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { Paw, Plus, Menu, X, Sun, Moon } from "./icons";
 
@@ -14,34 +14,45 @@ export default function Header({ onReportClick, live = null }) {
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("zone-hero");
   const { theme, toggleTheme } = useTheme();
+  const tickingRef = useRef(false);
 
   const go = useCallback((id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setOpen(false);
   }, []);
 
-  // Track which section is currently in view
+  // Continuously track which section is in view via scroll
   useEffect(() => {
-    const sectionIds = NAV.map((n) => n.id);
-    const observers = [];
+    const HEADER_HEIGHT = 56; // h-14 = 56px
 
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (!el) return;
+    const updateActiveSection = () => {
+      const scrollY = window.scrollY + HEADER_HEIGHT + 20; // 20px offset for better detection
+      let current = "zone-hero"; // default to hero
 
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setActiveSection(id);
-          }
-        },
-        { threshold: 0.3, rootMargin: "-80px 0px -40% 0px" }
-      );
-      observer.observe(el);
-      observers.push(observer);
-    });
+      for (let i = NAV.length - 1; i >= 0; i--) {
+        const el = document.getElementById(NAV[i].id);
+        if (el && el.offsetTop <= scrollY) {
+          current = NAV[i].id;
+          break;
+        }
+      }
 
-    return () => observers.forEach((o) => o.disconnect());
+      setActiveSection(current);
+      tickingRef.current = false;
+    };
+
+    const onScroll = () => {
+      if (!tickingRef.current) {
+        tickingRef.current = true;
+        requestAnimationFrame(updateActiveSection);
+      }
+    };
+
+    // Initial check
+    updateActiveSection();
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (

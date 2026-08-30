@@ -66,7 +66,7 @@ export default function MapPage({ onLiveChange, selectedId: externalSelectedId, 
   const isLoading = hotspotsLoading || segmentsLoading;
 
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-full w-full" style={{ minHeight: "min(70vh, 500px)" }}>
       {/* Remount on theme change so the basemap style (dark/light) reloads cleanly */}
       <Suspense fallback={<MapLoadingOverlay />}>
         <Map

@@ -52,27 +52,27 @@ export default function App() {
         </section>
 
         {/* ZONE 3: The Evidence — interactive map (contained) */}
-        <section id="zone-map" className="py-16 px-6">
+        <section id="zone-map" className="px-4 py-10 sm:px-6 sm:py-16">
           <div className="mx-auto max-w-6xl">
             {/* Section header */}
-            <div className="mb-8">
+            <div className="mb-6 sm:mb-8">
               <div className="inline-flex items-center gap-2 rounded-full border border-leaf/20 bg-leaf/[0.06] px-3 py-1">
                 <span className="h-1.5 w-1.5 rounded-full bg-leaf animate-pulse-glow" />
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-leaf/80">
                   The evidence
                 </span>
               </div>
-              <h2 className="mt-6 font-display text-display-lg text-bone">
+              <h2 className="mt-4 font-display text-display-lg text-bone sm:mt-6">
                 Explore the <span className="font-serif italic text-leaf">Network</span>
               </h2>
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-bone-dim">
+              <p className="mt-3 max-w-2xl text-base leading-relaxed text-bone-dim sm:mt-4">
                 Interactive map of wildlife-vehicle collision hotspots across India's national highways.
                 Click on any hotspot to see detailed analysis and intervention recommendations.
               </p>
             </div>
 
             {/* Map container + dossier side panel */}
-            <div className="flex items-stretch gap-6">
+            <div className="flex flex-col gap-4 sm:gap-6 md:flex-row md:items-stretch">
               {/* Dossier panel — left side (desktop only) */}
               <div className="hidden w-[320px] shrink-0 md:block">
                 <Suspense fallback={<div className="surface rounded-panel p-5 text-center min-h-[560px] flex items-center justify-center"><p className="text-sm text-bone-faint">Loading…</p></div>}>
@@ -88,8 +88,8 @@ export default function App() {
                 </Suspense>
               </div>
 
-              {/* Map — stretches to match dossier panel height */}
-              <div className="relative flex-1 overflow-hidden rounded-panel border border-rule shadow-panel">
+              {/* Map — explicit min-height for mobile */}
+              <div className="relative flex-1 overflow-hidden rounded-panel border border-rule shadow-panel" style={{ minHeight: "min(70vh, 500px)" }}>
                 <Suspense fallback={<div className="absolute inset-0 flex items-center justify-center bg-canopy-900"><p className="text-sm text-bone-faint">Loading map…</p></div>}>
                   <MapPage
                     onLiveChange={trackLive}
