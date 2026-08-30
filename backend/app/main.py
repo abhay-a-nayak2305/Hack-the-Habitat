@@ -49,6 +49,7 @@ def root():
             "/api/stats/dashboard",
             "/api/stats/honesty-ladder",
             "/api/sightings (POST)",
+            "/health",
         ],
     }
 
