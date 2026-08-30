@@ -4,9 +4,9 @@ Computes evaluation metrics for the segment risk model and exports
 a summary JSON for the methodology page and /api/stats/summary.
 
 Metrics are computed on a held-out spatial split and carry a caveat:
-with only 92 structured records, all numbers are directional rather
-than statistically definitive. The honesty ladder enforces this by
-demoting the predictive layer below 150 records.
+with structured citizen-science data, all numbers are directional
+rather than statistically definitive. The honesty ladder enforces this
+by demoting the predictive layer below 150 records.
 """
 from __future__ import annotations
 
@@ -82,12 +82,14 @@ def compute_metrics(
         "status": status,
         # Caveat
         "caveat": (
-            "All metrics computed on sparse citizen-science data (~92 records). "
+            f"All metrics computed on {total_observations} structured citizen-science records "
+            "(iNaturalist + GBIF curated datasets). "
             "Treat as directional, not statistically definitive. "
-            "The predictive layer is secondary to the evidence layer."
+            "Spatial and temporal biases exist (citizen-science skew toward accessible roads, "
+            "monsoon-season overrepresentation in some datasets)."
         ),
         "notes": (
-            "Model trained on sparse citizen-science data. "
+            "Model trained on structured citizen-science data from iNaturalist and GBIF. "
             "Predictive layer is secondary to the evidence layer. "
             "No risk scores are extrapolated into zero-coverage areas."
         ),

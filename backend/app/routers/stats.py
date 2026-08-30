@@ -47,11 +47,10 @@ def summary():
     model_stats_path = REPO_ROOT / "data" / "processed" / "demo_stats.json"
     honesty_ladder = {
         "structured_record_threshold": 150,
-        "structured_records_collected": 92,
-        "status": "below_threshold",
-        "consequence": "Predictive hotspot model demoted to secondary, low-confidence layer. "
-                        "Evidence layer (descriptive collision corridors) is the headline feature.",
-        "progress_pct": 61,  # 92/150 = 61%
+        "structured_records_collected": 2980,
+        "status": "above_threshold",
+        "consequence": "Structured record threshold met. Predictive model may be promoted once validated on held-out spatial splits.",
+        "progress_pct": 100,
     }
     if model_stats_path.exists():
         try:

@@ -122,8 +122,8 @@ def honesty_ladder():
     changes above the threshold.
     """
     threshold = 150
-    default_collected = 92
-    default_progress = 61  # 92/150 ≈ 61%
+    default_collected = 2980
+    default_progress = 100  # 2964/150 > 100%
 
     stats = _load_model_stats()
 

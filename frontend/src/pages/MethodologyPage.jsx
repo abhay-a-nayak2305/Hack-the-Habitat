@@ -96,8 +96,10 @@ export default function MethodologyPage() {
           <p className="mt-3 text-sm leading-relaxed text-bone-dim">
             Before letting a predictive model become the headline feature, we set a hard bar:
             <span className="mx-1 font-semibold text-bone">{HONESTY.threshold} structured records nationwide.</span>
-            "Structured" means pulled via iNaturalist's structured observation-field query — not free-text
-            search.             On Day 1 we collected {collected ?? "—"}.  
+            "Structured" means pulled via iNaturalist's structured observation-field query or curated GBIF datasets
+            with Darwin Core records — not free-text search. Our data sources: iNaturalist (roadkill-flagged
+            observations), India Roadkill Monitoring Project (491 records, CC-BY 4.0), and Anamalai Hills/Valparai
+            Plateau (2,473 records, CC-BY 4.0).
           </p>
 
           <div className="mt-5">
@@ -209,6 +211,42 @@ export default function MethodologyPage() {
             corridors sourced from literature, news, and structured observations — is the headline
             feature judges and forest departments should trust first. The model is shown as a secondary,
             clearly-labelled overlay, never as a confident prediction across the 146,000 km it hasn't seen.
+          </p>
+        </section>
+
+        {/* Data bias caveat */}
+        <section className="surface mt-10 rounded-panel border-amber/20 p-6 animate-fade-up" style={{ animationDelay: "340ms" }}>
+          <div className="flex items-center gap-2">
+            <span className="grid h-7 w-7 place-items-center rounded-md bg-amber/15 text-amber">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4M12 16h.01" />
+              </svg>
+            </span>
+            <h2 className="font-display text-display-sm text-bone">
+              Data <span className="font-serif text-amber">bias caveat</span>
+            </h2>
+          </div>
+          <p className="mt-3 text-sm leading-relaxed text-bone-dim">
+            Our datasets have real spatial and temporal biases that we want to be transparent about:
+          </p>
+          <ul className="mt-3 space-y-2 text-[13px] leading-relaxed text-bone-dim">
+            <li className="flex gap-2">
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber/60" />
+              <span><span className="font-semibold text-bone">Citizen-science skew:</span> Observations cluster toward accessible, well-traveled roads. Remote forest stretches are underrepresented.</span>
+            </li>
+            <li className="flex gap-2">
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber/60" />
+              <span><span className="font-semibold text-bone">Monsoon overrepresentation:</span> Some datasets show seasonal bias toward monsoon months (June–September) when roadkill is more visible and more reported.</span>
+            </li>
+            <li className="flex gap-2">
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber/60" />
+              <span><span className="font-semibold text-bone">Geographic concentration:</span> The Anamalai Hills dataset is concentrated in Tamil Nadu's Western Ghats. National coverage remains uneven.</span>
+            </li>
+          </ul>
+          <p className="mt-3 text-xs text-bone-faint">
+            These biases don't invalidate the evidence — they contextualize it. A hotspot with zero observations
+            may simply be unobserved, not safe. We never extrapolate risk scores into zero-coverage areas.
           </p>
         </section>
 

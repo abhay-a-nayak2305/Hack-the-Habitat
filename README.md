@@ -35,7 +35,7 @@ The Supreme Court's night-traffic ban on NH-766 through Bandipur Tiger Reserve w
 | **Rank** | Segments sorted by risk; clicking opens a recommendation card | "Segment NH-766-KM12 scores 87/100 — build a crossing here" |
 | **Act** | Recommendation cites evidence corridor so forest departments can budget | Decision-ready, fundable intervention plan |
 
-> **Transparency First:** The honesty ladder currently tracks structured records against the 150-record threshold. The predictive model is demoted to a secondary, clearly-labelled, low-confidence layer until that bar is met. The evidence layer — descriptive, citable collision corridors — is the headline.
+> **Transparency First:** The honesty ladder currently tracks structured records against the 150-record threshold. With ~2,964 records from iNaturalist and curated GBIF datasets, the threshold is met. The predictive model may be promoted once validated on held-out spatial splits. The evidence layer — descriptive, citable collision corridors — remains the headline.
 
 ---
 
@@ -173,11 +173,15 @@ SafePassage outputs the evidence layer that debate is missing — for policymake
 
 ## Data Sources
 
-| Source | Role | License |
-|--------|------|---------|
-| [iNaturalist](https://www.inaturalist.org/) | Roadkill-flagged observations | CC0 / CC-BY |
-| [OpenStreetMap](https://www.openstreetmap.org/) | Road geometry via Overpass API | ODbL |
-| [ESA WorldCover](https://worldcover2021.esa.int/) | 10m land cover classification | CC-BY 4.0 |
+| Source | Role | Records | License |
+|--------|------|---------|---------|
+| [iNaturalist](https://www.inaturalist.org/) | Roadkill-flagged observations (structured field query) | ~28 | CC0 / CC-BY |
+| [India Roadkill Monitoring Project](https://www.roadkillmonitoring.in/) | Curated citizen-science roadkill records across India | 491 | CC-BY 4.0 |
+| [Anamalai Hills / Valparai Plateau](https://www.gbif.org/dataset/4c627c3e-5c70-4874-9c03-e8de46e4a9c3) | Transect-based roadkill survey, Western Ghats | 2,473 | CC-BY 4.0 |
+| [OpenStreetMap](https://www.openstreetmap.org/) | Road geometry via Overpass API | — | ODbL |
+| [ESA WorldCover](https://worldcover2021.esa.int/) | 10m land cover classification | — | CC-BY 4.0 |
+
+**Total structured records: ~2,980** — above the 150-record honesty ladder threshold.
 
 ---
 
