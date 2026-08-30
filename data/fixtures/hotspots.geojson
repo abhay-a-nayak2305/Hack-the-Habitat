@@ -36,11 +36,11 @@
           11
         ],
         "observation_count": 14,
-        "nearest_highway": "NH-753BE",
+        "nearest_highway": "DHU MD 24",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Indian Grey Mongoose, Striped Hyaena, Common Palm Squirrel",
+        "vernacular_name": "Indian Grey Mongoose, Common Palm Squirrel, Striped Hyaena",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -81,11 +81,11 @@
           5
         ],
         "observation_count": 37,
-        "nearest_highway": "NH-353K",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Greater Bandicoot Rat, Indian Toad, Dumeril's Black-headed Snake",
+        "vernacular_name": "Indian Toad, Greater Bandicoot Rat, Dumeril's Black-headed Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -129,7 +129,7 @@
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Indian Golden Jackal, Golden Jackal, Indian Rock Python",
+        "vernacular_name": "Golden Jackal, Indian Rock Python, Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -170,11 +170,11 @@
           13
         ],
         "observation_count": 122,
-        "nearest_highway": "SH-243",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Western Russel\u2019s Viper, Chequered Keelback, Greater Coucal",
+        "vernacular_name": "Greater Coucal, Chequered Keelback, Western Russel\u2019s Viper",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -216,11 +216,11 @@
           4
         ],
         "observation_count": 25,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Indian Golden Jackal, Indian Crested Porcupine, Unidentified (Reptile Sp)",
+        "vernacular_name": "Unidentified (Reptile Sp), Indian Crested Porcupine, Indian Golden Jackal",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -261,7 +261,7 @@
           24
         ],
         "observation_count": 130,
-        "nearest_highway": "SH-243",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -310,7 +310,7 @@
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Golden Jackal, Indian Rock Python, Common Palm Squirrel",
+        "vernacular_name": "Common Palm Squirrel, Golden Jackal, Indian Rock Python",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -350,11 +350,11 @@
           4
         ],
         "observation_count": 52,
-        "nearest_highway": "NH-7",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Blackbuck, Changeable Lizard, Greater Coucal",
+        "vernacular_name": "Blackbuck, Greater Coucal, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -395,11 +395,11 @@
           10
         ],
         "observation_count": 78,
-        "nearest_highway": "SH-243",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Indian Nightjar, Indian Hare",
+        "vernacular_name": "Indian Hare, Indian Nightjar",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -439,11 +439,11 @@
           8
         ],
         "observation_count": 39,
-        "nearest_highway": "SH-200",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Small Indian Civet, Wild Boar, Chequered Keelback",
+        "vernacular_name": "Small Indian Civet, Chequered Keelback, Wild Boar",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -483,11 +483,11 @@
           2
         ],
         "observation_count": 18,
-        "nearest_highway": "SH-242",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Common Kukri Snake, Western Russel\u2019s Viper, Nilgai",
+        "vernacular_name": "Western Russel\u2019s Viper, Nilgai, Common Kukri Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -535,11 +535,11 @@
           38
         ],
         "observation_count": 779,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Waverly",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "Tamil Nadu",
-        "vernacular_name": "Toad, Skink, Common palm civet",
+        "vernacular_name": "Skink, Toad, Common palm civet",
         "sources": [
           "gbif_anamalai_hills"
         ]
@@ -587,11 +587,11 @@
           1
         ],
         "observation_count": 1932,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Nallamudi",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "Tamil Nadu",
-        "vernacular_name": "Frog, Snail",
+        "vernacular_name": "Snail, Frog",
         "sources": [
           "gbif_anamalai_hills"
         ]
@@ -639,11 +639,11 @@
           0
         ],
         "observation_count": 1482,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Nallamudi",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "Tamil Nadu",
-        "vernacular_name": "Mouse, Birds, Frog",
+        "vernacular_name": "Mouse, Frog, Birds",
         "sources": [
           "gbif_anamalai_hills"
         ]
@@ -683,11 +683,11 @@
           1
         ],
         "observation_count": 13,
-        "nearest_highway": "NH-353K",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Dumeril's Black-headed Snake, Western Russel\u2019s Viper, Pondich\u00e9ry Fan Throated Lizard",
+        "vernacular_name": "Pondich\u00e9ry Fan Throated Lizard, Dumeril's Black-headed Snake, Western Russel\u2019s Viper",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -727,11 +727,11 @@
           1
         ],
         "observation_count": 12,
-        "nearest_highway": "SH-241",
+        "nearest_highway": "Kurha",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Blackbuck, Rose-ringed Parakeet, Greater Coucal",
+        "vernacular_name": "Greater Coucal, Rose-ringed Parakeet, Blackbuck",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -769,11 +769,11 @@
           0
         ],
         "observation_count": 14,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Keesara Bogaram Ghatkesar Road",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Common Krait, Common Kukri Snake, Trinket Snake",
+        "vernacular_name": "Trinket Snake, Common Krait, Common Kukri Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -813,11 +813,11 @@
           1
         ],
         "observation_count": 9,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Large Flying-fox, Common Krait, Indian Bullfrog",
+        "vernacular_name": "Large Flying-fox, Indian Bullfrog, Common Krait",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -855,11 +855,11 @@
           0
         ],
         "observation_count": 13,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Indian Cobra, Common Kukri Snake, Trinket Snake",
+        "vernacular_name": "Indian Cobra, Trinket Snake, Common Kukri Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -900,7 +900,7 @@
           0
         ],
         "observation_count": 7,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -944,11 +944,11 @@
           0
         ],
         "observation_count": 9,
-        "nearest_highway": "SH-237",
+        "nearest_highway": "Road-Paved",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Northern Plains Gray Langur, Indian Cobra, Greater Coucal",
+        "vernacular_name": "Greater Coucal, Indian Cobra, Northern Plains Gray Langur",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -987,11 +987,11 @@
           2
         ],
         "observation_count": 10,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Kahanapur",
         "intervention": "wildlife_crossing",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Western Russel\u2019s Viper, Indian Rock Python",
+        "vernacular_name": "Indian Rock Python, Western Russel\u2019s Viper",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1035,7 +1035,7 @@
         "intervention": "signage",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Red-vented Bulbul, Asian Chameleon, Trinket Snake",
+        "vernacular_name": "Asian Chameleon, Trinket Snake, Red-vented Bulbul",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1075,7 +1075,7 @@
           0
         ],
         "observation_count": 6,
-        "nearest_highway": "SH-6",
+        "nearest_highway": "Bharuch Jambusar Road",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -1118,11 +1118,11 @@
           0
         ],
         "observation_count": 6,
-        "nearest_highway": "SH-31",
+        "nearest_highway": "Bhavnagar Road",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Indian Cobra, Golden Jackal, Indian Gamma Snake",
+        "vernacular_name": "Golden Jackal, Indian Cobra, Indian Gamma Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1161,11 +1161,11 @@
           0
         ],
         "observation_count": 6,
-        "nearest_highway": "SH-6",
+        "nearest_highway": "Road-Paved",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Indian Roller, Indian Rock Python, Changeable Lizard",
+        "vernacular_name": "Indian Rock Python, Indian Roller, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1203,11 +1203,11 @@
           0
         ],
         "observation_count": 7,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Keesara Bogaram Ghatkesar Road",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Common Kukri Snake, Common Krait, Indian Rock Python",
+        "vernacular_name": "Indian Rock Python, Common Krait, Common Kukri Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1247,11 +1247,11 @@
           0
         ],
         "observation_count": 3,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Velavadar Bhadhid Road",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Golden Jackal, Changeable Lizard, Asian Green Bee-eater",
+        "vernacular_name": "Asian Green Bee-eater, Golden Jackal, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1290,11 +1290,11 @@
           0
         ],
         "observation_count": 4,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Western Russel\u2019s Viper, Greater Coucal",
+        "vernacular_name": "Greater Coucal, Western Russel\u2019s Viper",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1333,11 +1333,11 @@
           1
         ],
         "observation_count": 4,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Kathora Chandur Bazar Road",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Changeable Lizard, Trinket Snake, Greater Coucal",
+        "vernacular_name": "Greater Coucal, Trinket Snake, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1376,11 +1376,11 @@
           0
         ],
         "observation_count": 4,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Sultanpur",
         "intervention": "signage",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Indian Egg-Eater, Bengal Monitor Lizard, Red-vented Bulbul",
+        "vernacular_name": "Indian Egg-Eater, Red-vented Bulbul, Bengal Monitor Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1419,11 +1419,11 @@
           0
         ],
         "observation_count": 3,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Bharuch Jambusar Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Red-vented Bulbul, Changeable Lizard, Trinket Snake",
+        "vernacular_name": "Trinket Snake, Red-vented Bulbul, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1462,7 +1462,7 @@
           1
         ],
         "observation_count": 3,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Agriculture College Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -1505,11 +1505,11 @@
           0
         ],
         "observation_count": 3,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Tirupati Venkatagiri Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Green Keelback, Common Krait, Greater Coucal",
+        "vernacular_name": "Greater Coucal, Green Keelback, Common Krait",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1548,7 +1548,7 @@
           1
         ],
         "observation_count": 3,
-        "nearest_highway": "SH-194",
+        "nearest_highway": "Road-Paved",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -1591,7 +1591,7 @@
           0
         ],
         "observation_count": 2,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Rajpara Kabran Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -1634,11 +1634,11 @@
           0
         ],
         "observation_count": 2,
-        "nearest_highway": "unknown",
+        "nearest_highway": "AHM MD 53",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Changeable Lizard, House Rat",
+        "vernacular_name": "House Rat, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1677,7 +1677,7 @@
           2
         ],
         "observation_count": 2,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Rajkot Highway",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -1720,11 +1720,11 @@
           2
         ],
         "observation_count": 2,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Changeable Lizard, House Rat",
+        "vernacular_name": "House Rat, Changeable Lizard",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1762,11 +1762,11 @@
           4
         ],
         "observation_count": 4,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Takli Bridge",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Common Wolf Snake, Western Russel\u2019s Viper, Common Krait",
+        "vernacular_name": "Common Krait, Western Russel\u2019s Viper, Common Wolf Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1805,11 +1805,11 @@
           0
         ],
         "observation_count": 2,
-        "nearest_highway": "SH-6",
+        "nearest_highway": "Kadhav dharani",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Common Barn-owl, Common Palm Squirrel",
+        "vernacular_name": "Common Palm Squirrel, Common Barn-owl",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1847,7 +1847,7 @@
           0
         ],
         "observation_count": 3,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Road-Paved",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -1889,11 +1889,11 @@
           0
         ],
         "observation_count": 3,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Asegaon",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
-        "vernacular_name": "Indian Cobra, Green Keelback, Trinket Snake",
+        "vernacular_name": "Green Keelback, Indian Cobra, Trinket Snake",
         "sources": [
           "gbif_india_roadkill_monitoring_project"
         ]
@@ -1931,7 +1931,7 @@
           0
         ],
         "observation_count": 2,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Baramati Bypass",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2057,7 +2057,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Nivatewadi",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2099,7 +2099,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "North Jaikwadi Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2141,7 +2141,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SOL MD 67",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2183,7 +2183,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Satjelia Mother Dunya Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2267,7 +2267,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Beltanr Raghunathpur Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2309,7 +2309,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2351,7 +2351,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Kosmada Khadsad Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2393,7 +2393,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Haveli Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2477,7 +2477,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Surat Dumas Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2519,7 +2519,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2561,7 +2561,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Jamjeer Ashram Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2645,7 +2645,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Karamdadi Sarasiya Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2687,7 +2687,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Una Talala Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2813,7 +2813,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Todaraisingh Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2897,7 +2897,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Jhalda Baghmundi Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -2939,7 +2939,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Dhorada Hodka Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3023,7 +3023,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Mandvi Layja Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3065,7 +3065,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Diamond Harbour Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3107,7 +3107,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Dhorada Hodka Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3149,7 +3149,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3191,7 +3191,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Sherpur Shirakol Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3233,7 +3233,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "SOL MD 34",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3317,7 +3317,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3401,7 +3401,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3443,7 +3443,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3485,7 +3485,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Girnar Taleti Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3527,7 +3527,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Yelachatti",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3569,7 +3569,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Charanki Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3611,7 +3611,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Mawsynram Stan Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3653,7 +3653,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Statue of Unity",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3695,7 +3695,7 @@
           1
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Pondicherry University Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3737,7 +3737,7 @@
           1
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "AH 46",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3863,7 +3863,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Polo Forest",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3947,7 +3947,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Auragabad",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -3989,7 +3989,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Fulzari",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4031,7 +4031,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Main Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4115,7 +4115,7 @@
           1
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Unnamed Road",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4157,7 +4157,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Pandhari",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4199,7 +4199,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Mihan",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4241,7 +4241,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Forest office",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4283,7 +4283,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Road-Paved",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4325,7 +4325,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Road-Paved",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4409,7 +4409,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Road-Paved",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4451,7 +4451,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Road-Paved",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4493,7 +4493,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Road-buldana",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4535,7 +4535,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Sindkhed Raja",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4577,7 +4577,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Road-Paved",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4619,7 +4619,7 @@
           0
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Near Parwa",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
@@ -4661,7 +4661,7 @@
           1
         ],
         "observation_count": 1,
-        "nearest_highway": "unknown",
+        "nearest_highway": "Road-Paved",
         "intervention": "speed_limit",
         "model_version": "v0.3-gbif",
         "state": "",
