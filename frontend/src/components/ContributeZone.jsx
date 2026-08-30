@@ -193,7 +193,7 @@ function FeatureCard({ feature, visible, delay = 0, onClick }) {
           <Icon size={18} />
         </span>
         {feature.tag && (
-          <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-[9px] font-medium uppercase tracking-wider ${
+          <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider ${
             feature.accent === "ember"
               ? "border border-ember/20 bg-ember/[0.08] text-ember"
               : feature.accent === "amber"

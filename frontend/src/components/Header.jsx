@@ -94,7 +94,7 @@ export default function Header({ onReportClick, live = null }) {
                   ? "text-bone bg-surface-raised"
                   : "text-bone-dim hover:text-bone"
               }`}
-              aria-current={activeSection === n.id ? "true" : undefined}
+              aria-current={activeSection === n.id ? "location" : undefined}
             >
               {n.label}
               {activeSection === n.id && (
@@ -171,7 +171,7 @@ export default function Header({ onReportClick, live = null }) {
                     ? "bg-surface-raised text-bone font-medium"
                     : "text-bone-dim hover:text-bone"
                 }`}
-                aria-current={activeSection === n.id ? "true" : undefined}
+              aria-current={activeSection === n.id ? "location" : undefined}
               >
                 {n.label}
               </button>

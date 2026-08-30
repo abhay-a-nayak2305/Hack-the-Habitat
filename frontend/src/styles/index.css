@@ -143,9 +143,10 @@ html, body, #root {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-* {
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-}
+/* Intentionally no universal transition rule — it causes jank on mobile
+   when hundreds of DOM elements (map container, popups, nested spans)
+   all evaluate transition properties on every frame.
+   Transitions are applied per-component via Tailwind classes or .surface:hover etc. */
 
 ::selection { background: var(--ember); color: var(--canopy); }
 *:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; border-radius: 6px; }

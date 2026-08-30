@@ -153,7 +153,7 @@ export default function App() {
             {/* Close button */}
             <button
               onClick={closeMobileDossier}
-              className="absolute right-3 top-3 z-10 rounded-lg p-1.5 text-bone-faint transition-colors hover:bg-canopy-600 hover:text-bone"
+              className="absolute right-3 top-3 z-10 rounded-lg p-2.5 min-h-[44px] min-w-[44px] flex items-center justify-center text-bone-faint transition-colors hover:bg-canopy-600 hover:text-bone"
               aria-label="Close dossier"
             >
               <X size={16} />

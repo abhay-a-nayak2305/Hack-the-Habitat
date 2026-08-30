@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { submitSighting } from "../hooks/useSafePassageData";
 import { Check, Locate, X } from "./icons";
 
@@ -10,6 +10,21 @@ export default function ReportSightingForm({ open, onClose }) {
   const [status, setStatus] = useState("idle");
   const [errors, setErrors] = useState({});
   const [geoError, setGeoError] = useState(null);
+  const [viewportHeight, setViewportHeight] = useState("100dvh");
+  const formRef = useRef(null);
+
+  // Handle mobile keyboard pushing the form off-screen
+  useEffect(() => {
+    if (!open) return;
+    const updateHeight = () => {
+      if (window.visualViewport) {
+        setViewportHeight(`${window.visualViewport.height}px`);
+      }
+    };
+    window.visualViewport?.addEventListener("resize", updateHeight);
+    updateHeight();
+    return () => window.visualViewport?.removeEventListener("resize", updateHeight);
+  }, [open]);
 
   if (!open) return null;
 
@@ -92,6 +107,7 @@ export default function ReportSightingForm({ open, onClose }) {
       aria-modal="true"
       aria-label="Report a roadkill sighting"
       onClick={(e) => e.target === e.currentTarget && close()}
+      style={{ height: viewportHeight }}
     >
       <div className="surface-overlay grain w-full max-w-md rounded-panel-lg animate-scale-in">
         <div className="flex items-start justify-between px-6 pt-6">
@@ -99,7 +115,7 @@ export default function ReportSightingForm({ open, onClose }) {
             <h2 className="font-display text-display-sm text-bone">Report a sighting</h2>
             <p className="mt-1 text-xs text-bone-dim">30 seconds of your eyes on the road feeds tomorrow's model run.</p>
           </div>
-          <button onClick={close} aria-label="Close" className="rounded-lg p-1.5 text-bone-faint transition-colors hover:bg-canopy-600 hover:text-bone">
+          <button onClick={close} aria-label="Close" className="rounded-lg p-2.5 min-h-[44px] min-w-[44px] flex items-center justify-center text-bone-faint transition-colors hover:bg-canopy-600 hover:text-bone">
             <X size={16} />
           </button>
         </div>
@@ -173,19 +189,39 @@ export default function ReportSightingForm({ open, onClose }) {
   );
 }
 
-function Field({ label, required, value, onChange, placeholder, mono, error, textarea, rows }) {
+function Field({ label, required, value, onChange, placeholder, mono, error, textarea, rows, id }) {
+  const fieldId = id || label.toLowerCase().replace(/\s+/g, "-");
+  const errorId = error ? `${fieldId}-error` : undefined;
   return (
     <div>
-      <label className="field-label">
+      <label htmlFor={fieldId} className="field-label">
         {label}
         {required && <span className="ml-0.5 text-ember">*</span>}
       </label>
       {textarea ? (
-        <textarea value={value} onChange={onChange} rows={rows} placeholder={placeholder} className={`field ${error ? "border-ember/50 focus:border-ember focus:shadow-[0_0_0_3px_rgba(224,77,40,0.1)]" : ""}`} />
+        <textarea
+          id={fieldId}
+          value={value}
+          onChange={onChange}
+          rows={rows}
+          placeholder={placeholder}
+          aria-invalid={!!error}
+          aria-describedby={errorId}
+          className={`field ${error ? "border-ember/50 focus:border-ember focus:shadow-[0_0_0_3px_rgba(224,77,40,0.1)]" : ""}`}
+        />
       ) : (
-        <input value={value} onChange={onChange} placeholder={placeholder} required={required} className={`field ${mono ? "font-mono" : ""} ${error ? "border-ember/50 focus:border-ember focus:shadow-[0_0_0_3px_rgba(224,77,40,0.1)]" : ""}`} />
+        <input
+          id={fieldId}
+          value={value}
+          onChange={onChange}
+          placeholder={placeholder}
+          required={required}
+          aria-invalid={!!error}
+          aria-describedby={errorId}
+          className={`field ${mono ? "font-mono" : ""} ${error ? "border-ember/50 focus:border-ember focus:shadow-[0_0_0_3px_rgba(224,77,40,0.1)]" : ""}`}
+        />
       )}
-      {error && <p className="mt-1 text-[11px] text-ember">{error}</p>}
+      {error && <p id={errorId} role="alert" className="mt-1 text-[11px] text-ember">{error}</p>}
     </div>
   );
 }

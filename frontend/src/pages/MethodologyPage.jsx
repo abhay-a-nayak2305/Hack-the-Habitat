@@ -46,7 +46,7 @@ const STEPS = [
   },
 ];
 
-const HONESTY = { threshold: 150, fallback: 92 };
+const HONESTY = { threshold: 150 };
 
 export default function MethodologyPage() {
   const stats = useStats();
@@ -55,9 +55,9 @@ export default function MethodologyPage() {
     return <PageLoadingSkeleton />;
   }
 
-  const collected = stats?.honesty_ladder?.structured_records_collected ?? HONESTY.fallback;
-  const pctCollected = Math.min(100, Math.round((collected / HONESTY.threshold) * 100));
-  const below = collected < HONESTY.threshold;
+  const collected = stats?.honesty_ladder?.structured_records_collected;
+  const pctCollected = collected != null ? Math.min(100, Math.round((collected / HONESTY.threshold) * 100)) : 0;
+  const below = collected != null ? collected < HONESTY.threshold : true;
 
   return (
     <div
@@ -97,14 +97,14 @@ export default function MethodologyPage() {
             Before letting a predictive model become the headline feature, we set a hard bar:
             <span className="mx-1 font-semibold text-bone">{HONESTY.threshold} structured records nationwide.</span>
             "Structured" means pulled via iNaturalist's structured observation-field query — not free-text
-            search. On Day 1 we collected {collected}.
+            search.             On Day 1 we collected {collected ?? "—"}.  
           </p>
 
           <div className="mt-5">
             <div className="flex items-baseline justify-between font-mono text-[11px] text-bone-dim">
               <span>Honesty meter</span>
               <span className={below ? "text-amber" : "text-leaf-bright"}>
-                {collected} / {HONESTY.threshold} records
+                {collected ?? "—"} / {HONESTY.threshold} records
               </span>
             </div>
             <div className="mt-1.5 h-2.5 overflow-hidden rounded-full bg-canopy-600">

@@ -4,26 +4,7 @@ import { Alert, Info } from "./icons";
 
 const API_BASE = import.meta.env.VITE_API_BASE || "/api";
 
-/* ── Fallback data (mirrors demo_stats.json shape) ─────────────────── */
-const FALLBACK_DASHBOARD = {
-  model_metrics: { auc: 0.8429, calibration_error: 0.2006, top5_capture: 0.2, total_segments: 45, positive_segments: 18, model_version: "v0.3" },
-  intervention_breakdown: { wildlife_crossing: 5, fencing: 3, signage: 2, speed_limit: 4, none: 1 },
-  corridor_stats: [
-    { highway: "NH-766", hotspots: 22, avg_risk: 68, max_risk: 100, endangered: 4, total_observations: 80 },
-  ],
-  risk_distribution: { high: 10, medium: 12, low: 6 },
-  species_summary: { Mammalia: 45, Aves: 30, Reptilia: 10, Amphibia: 7 },
-};
-
-const FALLBACK_HONESTY = {
-  threshold: 150,
-  collected: 92,
-  progress_pct: 61,
-  status: "below_threshold",
-  consequence: "Predictive hotspot model demoted to secondary, low-confidence layer.",
-  what_above_threshold:
-    "Once we reach 150 records, the predictive model will be promoted to a primary overlay with full confidence ratings.",
-};
+/* ── No fabricated fallback data — show "unavailable" when API is down ── */
 
 /* ── Helpers ───────────────────────────────────────────────────────── */
 const INTERVENTION_META = {
@@ -78,6 +59,16 @@ function BarChart({ items, maxValue, inView }) {
 }
 
 function ModelPerformance({ metrics, inView }) {
+  if (!metrics) {
+    return (
+      <div className="border-b border-rule pb-5">
+        <h3 className="field-label">Model Performance</h3>
+        <div className="mt-4 rounded-lg bg-canopy-700/50 px-4 py-6 text-center">
+          <p className="text-xs text-bone-faint">Model metrics unavailable — API endpoint unreachable.</p>
+        </div>
+      </div>
+    );
+  }
   const aucPct = Math.round((metrics?.auc || 0) * 100);
   return (
     <div className="border-b border-rule pb-5">
@@ -140,7 +131,21 @@ function ModelPerformance({ metrics, inView }) {
 }
 
 function HonestyLadder({ data, inView }) {
-  if (!data) return null;
+  if (!data) {
+    return (
+      <div className="border-b border-rule pb-5">
+        <div className="flex items-center justify-between">
+          <h3 className="field-label">Honesty Ladder</h3>
+          <span className="inline-flex items-center gap-1 rounded-full border border-amber/30 bg-amber-muted px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-amber">
+            <span className="h-1 w-1 rounded-full bg-amber" /> Unavailable
+          </span>
+        </div>
+        <div className="mt-4 rounded-lg bg-canopy-700/50 px-4 py-6 text-center">
+          <p className="text-xs text-bone-faint">Honesty ladder data unavailable — API endpoint unreachable.</p>
+        </div>
+      </div>
+    );
+  }
   const isAbove = data.status === "above_threshold";
   return (
     <div className="border-b border-rule pb-5">
@@ -302,10 +307,10 @@ export default function IntelligenceDashboard() {
     Promise.all([
       fetch(`${API_BASE}/stats/dashboard`)
         .then((r) => (r.ok ? r.json() : Promise.reject()))
-        .catch(() => FALLBACK_DASHBOARD),
+        .catch(() => null),
       fetch(`${API_BASE}/stats/honesty-ladder`)
         .then((r) => (r.ok ? r.json() : Promise.reject()))
-        .catch(() => FALLBACK_HONESTY),
+        .catch(() => null),
     ])
       .then(([d, h]) => {
         if (!cancelled) {
@@ -316,8 +321,8 @@ export default function IntelligenceDashboard() {
       })
       .catch(() => {
         if (!cancelled) {
-          setDashboard(FALLBACK_DASHBOARD);
-          setHonesty(FALLBACK_HONESTY);
+          setDashboard(null);
+          setHonesty(null);
           setLoading(false);
         }
       });
@@ -407,8 +412,10 @@ export default function IntelligenceDashboard() {
         <div className={`mt-8 flex items-start gap-2.5 rounded-lg bg-canopy-700/30 px-4 py-3 transition-all duration-500 delay-500 ${inView ? "opacity-100" : "opacity-0"}`}>
           <Alert size={13} className="mt-0.5 shrink-0 text-amber" />
           <p className="text-[11.5px] leading-relaxed text-bone-faint">
-            All metrics are derived from {dashboard?.model_metrics?.total_segments || 45} road segments
-            across India's national highways. Model is version {dashboard?.model_metrics?.model_version || "v0.3"} — accuracy
+            {dashboard?.model_metrics?.total_segments
+              ? `All metrics are derived from ${dashboard.model_metrics.total_segments} road segments across India's national highways.`
+              : "Metrics are derived from road segments across India's national highways."}
+            {" "}Model is version {dashboard?.model_metrics?.model_version || "—"} — accuracy
             improves as citizen-science observations accumulate.
           </p>
         </div>

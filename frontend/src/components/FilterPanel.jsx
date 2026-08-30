@@ -50,7 +50,7 @@ export default function FilterPanel({
         />
       )}
 
-      <div className="absolute right-3 top-16 z-20 w-[280px] md:top-4">
+      <div className="absolute right-3 top-16 z-20 w-[min(280px,calc(100vw-24px))] md:top-4">
         <button
           onClick={() => setOpen((v) => !v)}
           className="chip mb-2 flex w-full justify-center border-rule bg-surface/85 backdrop-blur-md"

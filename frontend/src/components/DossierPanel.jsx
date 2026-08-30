@@ -59,13 +59,13 @@ export default function DossierPanel({ hotspot, onClose }) {
               )}
             </h2>
           </div>
-          <button onClick={onClose} aria-label="Close dossier" className="rounded-lg p-1.5 text-bone-faint transition-colors hover:bg-canopy-600 hover:text-bone">
+          <button onClick={onClose} aria-label="Close dossier" className="rounded-lg p-2.5 min-h-[44px] min-w-[44px] flex items-center justify-center text-bone-faint transition-colors hover:bg-canopy-600 hover:text-bone">
             <X size={16} />
           </button>
         </div>
 
         {/* Risk readout + intervention */}
-        <div className="mt-3 grid grid-cols-[auto_1fr] items-center gap-4 px-5">
+        <div className="mt-3 grid grid-cols-1 gap-4 px-5 sm:grid-cols-[auto_1fr] sm:items-center">
           <RiskGauge score={Number(p.risk_score) || 0} size={132} />
           <div className="min-w-0">
             <div className="field-label">Recommended action</div>
@@ -169,7 +169,7 @@ export default function DossierPanel({ hotspot, onClose }) {
         {/* Evidence source */}
         <section className="border-t border-rule px-5 py-3">
           <a
-            href="https://www.inaturalist.org/observations?place_id=6737&taxon_id=47170"
+            href={`https://www.inaturalist.org/observations?place_id=6737&taxon_id=47170&lat=${lat}&lng=${lon}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-[11px] text-bone-faint hover:text-amber transition-colors"

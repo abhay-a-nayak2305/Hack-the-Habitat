@@ -29,7 +29,7 @@ export function StatSkeleton({ count = 5 }) {
         <div className="h-4 w-32 animate-pulse rounded bg-canopy-600" />
         <div className="h-3 w-16 animate-pulse rounded bg-canopy-600" />
       </div>
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-3 gap-2 sm:grid-cols-5">
         {Array.from({ length: count }).map((_, i) => (
           <div key={i} className="min-w-0">
             <div className="h-6 w-12 animate-pulse rounded bg-canopy-600" />

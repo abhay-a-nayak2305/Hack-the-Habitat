@@ -3,21 +3,18 @@ import { useStats } from "../hooks/useSafePassageData";
 import { useInView } from "../hooks/useInView";
 import { ArrowRight, Book, ChevronDown, Paw, Shield } from "./icons";
 
-const DEFAULTS = {
-  hotspot_count: 28,
-  total_structured_observations: 92,
-  category_count: 4,
-};
-
 export default function Hero({ onReportClick }) {
   const stats = useStats();
   const [heroRef, heroInView] = useInView({ threshold: 0.1 });
 
-  const hotspots = stats?.hotspot_count ?? DEFAULTS.hotspot_count;
-  const records = stats?.total_structured_observations ?? DEFAULTS.total_structured_observations;
+  const hotspots = stats?.hotspot_count ?? "—";
+  const records = stats?.total_structured_observations ?? "—";
   const corridors = stats?.hotspots_by_highway
     ? Object.keys(stats.hotspots_by_highway).length
-    : DEFAULTS.category_count;
+    : "—";
+  const highwayNames = stats?.hotspots_by_highway
+    ? Object.keys(stats.hotspots_by_highway).join(" · ")
+    : null;
 
   const scrollToMap = () => {
     document.getElementById("zone-map")?.scrollIntoView({ behavior: "smooth" });
@@ -85,7 +82,7 @@ export default function Hero({ onReportClick }) {
         </div>
 
         {/* Headline — the thesis */}
-        <h1 className="mt-8 animate-fade-up font-display text-[2.75rem] font-bold leading-[1.06] tracking-[-0.03em] text-bone sm:text-[3.75rem]">
+        <h1 className="mt-8 animate-fade-up font-display text-[2rem] font-bold leading-[1.06] tracking-[-0.03em] text-bone sm:text-[2.75rem] md:text-[3.75rem]">
           <span className="block">Show us your highway,</span>
           <span className="mt-1 block font-serif text-[1.15em] font-normal italic leading-[1.1] text-ember">
             we'll tell you where animals die next
@@ -111,7 +108,7 @@ export default function Hero({ onReportClick }) {
 
         {/* Fact strip — animated counters */}
         <div
-          className="mt-10 grid grid-cols-3 gap-3 animate-fade-up"
+          className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3 animate-fade-up"
           style={{ animationDelay: "140ms" }}
         >
           <Fact
@@ -131,7 +128,7 @@ export default function Hero({ onReportClick }) {
           <Fact
             value={corridors}
             suffix="corridors ranked"
-            label="NH-766 · NH-48 · NH-37 · NH-27"
+            label={highwayNames || "highway corridors"}
             accent="ember"
             animate={heroInView}
           />
@@ -172,10 +169,10 @@ export default function Hero({ onReportClick }) {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: "600ms" }}>
         <button
           onClick={scrollToMap}
-          className="flex flex-col items-center gap-1.5 text-bone-faint transition-colors hover:text-bone"
+          className="flex flex-col items-center gap-1.5 min-h-[44px] min-w-[44px] justify-center text-bone-faint transition-colors hover:text-bone"
           aria-label="Scroll down to explore the map"
         >
-          <span className="font-mono text-[9px] uppercase tracking-[0.2em]">Scroll</span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.2em]">Scroll</span>
           <ChevronDown size={18} className="animate-bounce-down" />
         </button>
       </div>

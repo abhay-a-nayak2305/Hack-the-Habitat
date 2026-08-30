@@ -49,7 +49,7 @@ export default function StatsHeader({ features = [], fallback = null }) {
           {features?.length ?? 0} clusters
         </span>
       </div>
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-3 gap-2 sm:grid-cols-5">
         {items.map((it) => (
           <div key={it.label} className="min-w-0">
             <div className={`data-value font-display text-data-lg leading-none ${it.color || "text-bone"}`}>

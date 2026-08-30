@@ -13,11 +13,6 @@ const STORY_STATS = [
     accent: "amber",
   },
   {
-    value: "4",
-    label: "endangered species at direct risk",
-    accent: "leaf",
-  },
-  {
     value: "150",
     label: "record threshold for full prediction",
     accent: "amber",
