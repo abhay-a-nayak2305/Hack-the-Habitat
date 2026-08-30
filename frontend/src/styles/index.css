@@ -17,6 +17,7 @@
   --surface-solid-rgb: 13 23 20;
   --surface-raised-rgb: 19 32 24;
   --surface-overlay-rgb: 8 14 12;
+  --surface-overlay: rgb(8 14 12);
   --bone: #F0EDE4;
   --bone-rgb: 240 237 228;
   --bone-bright-rgb: 250 249 246;
@@ -82,6 +83,7 @@
   --surface-solid-rgb: 252 251 247;
   --surface-raised-rgb: 243 240 232;
   --surface-overlay-rgb: 255 255 255;
+  --surface-overlay: rgb(255 255 255);
   --bone: #0F1713;
   --bone-rgb: 15 23 19;
   --bone-bright-rgb: 4 7 6;
@@ -236,18 +238,6 @@ html, body, #root {
   }
   .btn-ember:hover {
     box-shadow: 0 0 0 1px rgba(224,77,40,0.65), 0 6px 16px rgba(224,77,40,0.3);
-    transform: translateY(-1px);
-  }
-
-  /* Light theme: boost ember button visibility */
-  [data-theme="light"] .btn-ember {
-    color: #fff;
-    background: #E85D3A;
-    box-shadow: 0 0 0 1px rgba(232,93,58,0.7), 0 2px 8px rgba(232,93,58,0.3);
-  }
-  [data-theme="light"] .btn-ember:hover {
-    background: #D94F2E;
-    box-shadow: 0 0 0 1px rgba(217,79,46,0.85), 0 4px 12px rgba(217,79,46,0.4);
     transform: translateY(-1px);
   }
 
